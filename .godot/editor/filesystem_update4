@@ -1,6 +1,8 @@
 res://Scenes/main.tscn
 res://Resources/invader_config.gd
 res://Scenes/bunker_part.gd
+res://Scenes/laser.gd
+res://Scenes/ui.gd
 res://Scenes/player.tscn
 res://Scenes/laser.tscn
 res://Scenes/bullet_catcher.tscn
