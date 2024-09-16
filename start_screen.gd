@@ -12,6 +12,7 @@ extends CanvasLayer
 
 @onready var Menu: MarginContainer = $MarginContainer
 @onready var SettingsMenu: Panel = $Panel
+@onready var Title: Label = $Label
 
 var node_array = []
 
@@ -42,5 +43,14 @@ func load_game():
 	
 func open_settings():
 	Menu.hide()
+	Title.hide()
 	SettingsMenu.show()
+	
+func close_settings():
+	SettingsMenu.hide()
+	Title.show()
+	Menu.show()
+	
+	
+	
 	

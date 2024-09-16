@@ -227,13 +227,8 @@ offset_right = 570.0
 offset_bottom = 465.0
 text = "Return"
 
-[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
-autoplay = true
-bus = &"Effects"
-
 [connection signal="pressed" from="MarginContainer/VBoxContainer/CenterContainer/Button" to="." method="load_game"]
 [connection signal="pressed" from="MarginContainer/VBoxContainer/CenterContainerSettings/Button" to="." method="open_settings"]
 [connection signal="pressed" from="MarginContainer/VBoxContainer/CenterContainerQuit/Button" to="." method="quit_game"]
-[connection signal="value_changed" from="Panel/Music Slider" to="Panel/Music Slider" method="music_slider_changed"]
-[connection signal="value_changed" from="Panel/Effect Slider" to="Panel/Music Slider" method="effect_slider_changed"]
+[connection signal="value_changed" from="Panel/Music Slider" to="Panel/Music Slider" method="_on_value_changed"]
 [connection signal="pressed" from="Panel/Button" to="." method="close_settings"]
