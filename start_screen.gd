@@ -10,6 +10,9 @@ extends CanvasLayer
 
 @onready var timer = $Timer
 
+@onready var Menu: MarginContainer = $MarginContainer
+@onready var SettingsMenu: Panel = $Panel
+
 var node_array = []
 
 func _ready():
@@ -36,4 +39,8 @@ func on_timer_timeout():
 
 func load_game():
 	get_tree().change_scene_to_file("res://Scenes/main.tscn")
+	
+func open_settings():
+	Menu.hide()
+	SettingsMenu.show()
 	

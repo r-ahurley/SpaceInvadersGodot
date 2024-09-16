@@ -1,0 +1,4 @@
+res://start_screen.tscn
+res://Resources/invader_config.gd
+res://Scenes/bunker_part.gd
+res://start_screen.gd
