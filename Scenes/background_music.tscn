@@ -1,0 +1,5 @@
+[gd_scene format=3 uid="uid://b7o8ytjjdecej"]
+
+[node name="Background Music" type="AudioStreamPlayer"]
+autoplay = true
+bus = &"Effects"

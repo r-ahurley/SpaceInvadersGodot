@@ -1,4 +1,5 @@
 AudioStreamPlayer
+AudioStreamPlayer2D
 Button
 Label
 Timer
@@ -11,5 +12,3 @@ CanvasLayer
 Node
 CollisionShape2D
 Area2D
-CollisionPolygon2D
-Node2D

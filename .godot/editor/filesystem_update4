@@ -1,6 +1,8 @@
-res://start_screen.tscn
-res://Resources/invader_config.gd
+res://Scenes/player.tscn
 res://Scenes/bunker_part.gd
-res://start_screen.gd
-res://default_bus_layout.tres
-res://Audio controls.gd
+res://Resources/invader_config.gd
+res://start_screen.tscn
+res://Scenes/main.tscn
+res://Scenes/laser.tscn
+res://Scenes/laser.gd
+res://Scenes/invader.tscn

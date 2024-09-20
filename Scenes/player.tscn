@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=3 uid="uid://dtone6hpojcx1"]
+[gd_scene load_steps=13 format=3 uid="uid://dtone6hpojcx1"]
 
 [ext_resource type="Script" path="res://Scenes/player.gd" id="1_1fcfm"]
 [ext_resource type="Texture2D" uid="uid://dt0af4o7yh41a" path="res://Assets/Player/Player.png" id="1_iyxsd"]
@@ -7,6 +7,7 @@
 [ext_resource type="Texture2D" uid="uid://bi2vdab3slwgf" path="res://Assets/Player/Player-explosion1.png" id="5_quymd"]
 [ext_resource type="Texture2D" uid="uid://b4mk25ro2nqtu" path="res://Assets/Player/Player-explosion2.png" id="6_txnpx"]
 [ext_resource type="Texture2D" uid="uid://dsg2krqtkgnca" path="res://Assets/Player/Player-explosion3.png" id="7_mp6n4"]
+[ext_resource type="AudioStream" uid="uid://yon7d5k2aonu" path="res://Assets/Audio/Player_Destroyed.wav" id="9_ef3d3"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_w7q3x"]
 size = Vector2(13, 4.5)
@@ -41,6 +42,25 @@ tracks/0/keys = {
 "update": 1,
 "values": [ExtResource("5_quymd"), ExtResource("6_txnpx"), ExtResource("7_mp6n4"), ExtResource("5_quymd"), ExtResource("6_txnpx"), ExtResource("7_mp6n4"), ExtResource("5_quymd"), ExtResource("6_txnpx"), ExtResource("7_mp6n4")]
 }
+tracks/1/type = "audio"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("player_destroyed")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"clips": [{
+"end_offset": 0.0,
+"start_offset": 0.0,
+"stream": ExtResource("9_ef3d3")
+}, {
+"end_offset": 0.0,
+"start_offset": 0.0,
+"stream": null
+}],
+"times": PackedFloat32Array(0, 2.23333)
+}
+tracks/1/use_blend = true
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_ifh0c"]
 _data = {
@@ -70,5 +90,7 @@ laser_scene = ExtResource("4_f23lw")
 libraries = {
 "": SubResource("AnimationLibrary_ifh0c")
 }
+
+[node name="player_destroyed" type="AudioStreamPlayer" parent="."]
 
 [connection signal="animation_finished" from="AnimationPlayer" to="." method="_on_animation_player_animation_finished"]

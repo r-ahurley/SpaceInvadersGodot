@@ -14,6 +14,10 @@ config/name="Space Invaders"
 run/main_scene="res://start_screen.tscn"
 config/features=PackedStringArray("4.3", "Forward Plus")
 
+[autoload]
+
+BackgroundMusic="*res://Scenes/background_music.tscn"
+
 [input]
 
 move_left={
