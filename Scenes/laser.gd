@@ -2,7 +2,7 @@ extends Area2D
 
 class_name Laser
 
-@export var speed = 300
+@export var speed = 500
 const SI_PLAYER_SHOOT = preload("res://Assets/Audio/SI_Player_Shoot.wav")
 
 func _ready():
