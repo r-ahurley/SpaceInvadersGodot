@@ -25,7 +25,7 @@ func _ready():
 	
 	for i in range(lifes_count):
 		var life_texture_rect = TextureRect.new()
-		life_texture_rect.expand_mode = TextureRect.EXPAND_KEEP_SIZE
+		life_texture_rect.expand_mode = true
 		life_texture_rect.custom_minimum_size = Vector2(40, 25)
 		life_texture_rect.texture_filter = CanvasItem.TEXTURE_FILTER_NEAREST
 		life_texture_rect.texture = life_texture
