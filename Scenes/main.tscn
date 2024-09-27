@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=3 uid="uid://x52tm03ns8q"]
+[gd_scene load_steps=12 format=3 uid="uid://x52tm03ns8q"]
 
 [ext_resource type="PackedScene" uid="uid://dtone6hpojcx1" path="res://Scenes/player.tscn" id="1_tywl6"]
 [ext_resource type="PackedScene" uid="uid://dfn1yx70sdynd" path="res://Scenes/bullet_catcher.tscn" id="2_0880y"]
@@ -8,6 +8,7 @@
 [ext_resource type="Script" path="res://Scenes/life_manager.gd" id="6_oi80j"]
 [ext_resource type="Script" path="res://Scenes/points_counter.gd" id="7_yb1s2"]
 [ext_resource type="PackedScene" uid="uid://belx0qfvh4cii" path="res://Scenes/ui.tscn" id="8_usk4o"]
+[ext_resource type="PackedScene" uid="uid://b1a5x1tdnmkvx" path="res://midi_control.tscn" id="9_t2n21"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_8uhrm"]
 size = Vector2(40, 617)
@@ -77,6 +78,8 @@ script = ExtResource("6_oi80j")
 
 [node name="PointsCounter" type="Node" parent="."]
 script = ExtResource("7_yb1s2")
+
+[node name="MIDI Control" parent="." instance=ExtResource("9_t2n21")]
 
 [node name="UI" parent="." node_paths=PackedStringArray("invader_spawner", "life_manager") instance=ExtResource("8_usk4o")]
 invader_spawner = NodePath("../InvaderSpawner")

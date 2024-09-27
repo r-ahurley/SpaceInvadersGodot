@@ -71,6 +71,7 @@ _data = {
 [node name="Player" type="Area2D"]
 scale = Vector2(4, 4)
 script = ExtResource("1_1fcfm")
+laser_scene = ExtResource("4_f23lw")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture_filter = 1

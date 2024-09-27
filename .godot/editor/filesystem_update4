@@ -1,5 +1,12 @@
 res://start_screen.tscn
 res://Resources/invader_config.gd
 res://Scenes/bunker_part.gd
-res://Scenes/invader_shot.gd
-res://Scenes/laser.gd
+res://Scenes/player.gd
+res://Scenes/player.tscn
+res://Scenes/midi_key.tscn
+res://Scenes/midi_key.gd
+res://Scenes/midi_control.tscn
+res://midi_control.tscn
+res://Scenes/midi_control.gd
+res://Scenes/ui.tscn
+res://Scenes/main.tscn
