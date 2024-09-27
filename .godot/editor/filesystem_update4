@@ -7,3 +7,5 @@ res://Scenes/midi_key.tscn
 res://midi_control.tscn
 res://Scenes/ui.tscn
 res://Scenes/main.tscn
+res://Scenes/invader.tscn
+res://ufo_spawner.tscn
