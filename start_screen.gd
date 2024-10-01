@@ -51,6 +51,7 @@ func close_settings():
 	Title.show()
 	Menu.show()
 	
-	
+func quit_game():
+	get_tree().quit()
 	
 	
