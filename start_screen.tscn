@@ -6,7 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://m4ub6oll4ikv" path="res://Assets/Invaders/Invader3-1.png" id="2_su4we"]
 [ext_resource type="Texture2D" uid="uid://bn227mp3yqjlo" path="res://Assets/Invaders/Invader2-1.png" id="4_iod57"]
 [ext_resource type="Script" path="res://Audio controls.gd" id="6_idy13"]
-[ext_resource type="PackedScene" uid="uid://b7o8ytjjdecej" path="res://Scenes/background_music.tscn" id="7_pc6pw"]
+[ext_resource type="PackedScene" path="res://Scenes/background_music.tscn" id="7_pc6pw"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_vcw74"]
 bg_color = Color(0, 0, 0, 1)

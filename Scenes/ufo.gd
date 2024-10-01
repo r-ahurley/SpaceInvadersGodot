@@ -17,7 +17,8 @@ func _on_visible_on_screen_notifier_2d_screen_exited():
 
 func _on_area_entered(area):
 	if area is Laser:
-		shooting_point.queue_free()
+		if is_instance_valid(shooting_point):
+			shooting_point.queue_free()
 		speed = 0
 		sprite.texture = explosion_texture
 		await get_tree().create_timer(1.5).timeout

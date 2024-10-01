@@ -9,3 +9,4 @@ res://Scenes/ui.tscn
 res://Scenes/main.tscn
 res://Scenes/invader.tscn
 res://ufo_spawner.tscn
+res://Scenes/ufo.gd
