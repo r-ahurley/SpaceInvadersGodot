@@ -1,9 +1,10 @@
+CheckButton
+Label
 MidiKey
 MidiControl
 AudioStreamPlayer
 AudioStreamPlayer2D
 Button
-Label
 Timer
 HBoxContainer
 VBoxContainer
@@ -12,4 +13,3 @@ TextureRect
 CenterContainer
 CanvasLayer
 Node
-CollisionShape2D

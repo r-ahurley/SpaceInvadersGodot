@@ -28,12 +28,19 @@ var pitch_letter: String
 var valid_pitches: Array[int]
 var is_pressed := false
 var keys_held := 0
+var velocity_release := false
+
+
+
+	
+
 
 func _ready():
-	# This match statement sets valid_keys to contain every possible MIDI pitch
-	# corresponding to the selected key_name in the inspector.
-	# For example, setting key_name to "C" will assign valid_keys an array
-	# containing every possible "C" MIDI pitch.
+	
+	print(str(Globals.toggled))
+	velocity_release = Globals.toggled
+	
+#store every possible pitch code to the relevant key
 	match pitch_type:
 		0:	# Every C Key
 			valid_pitches = [0, 12, 24, 36, 48, 60, 72, 84, 96, 108, 120]
@@ -70,7 +77,8 @@ func call_key(pitch: int, velocity: int, message: int):
 				#animated_sprite.play("on")
 				emit_signal("midi_key_pressed", pitch_letter)
 			keys_held += 1
-		elif message == 8:
+		elif (velocity_release == false && message == 8) || (velocity_release == true && velocity == 0):
+			print(velocity_release)
 			if keys_held == 1:
 				print("%s key released." % [pitch_letter])
 				emit_signal("midi_key_released", pitch_letter)

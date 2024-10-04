@@ -17,6 +17,7 @@ config/features=PackedStringArray("4.3", "Forward Plus")
 [autoload]
 
 BackgroundMusic="*res://Scenes/background_music.tscn"
+Globals="*res://globals.gd"
 
 [input]
 

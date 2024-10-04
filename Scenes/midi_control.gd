@@ -9,6 +9,8 @@ signal note_released
 @export var midi_keys: Array[Node]
 var test = 0;
 
+var velocity_release = false;
+
 # Called when the node enters the scene tree for the first time.
 # Opens MIDI inputs and prints the connected MIDI controller.
 func _ready() -> void:

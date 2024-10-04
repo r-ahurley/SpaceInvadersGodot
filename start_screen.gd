@@ -1,5 +1,6 @@
 extends CanvasLayer
 
+signal release_toggled(toggle)
 
 @onready var invader_1_texture = %Invader1Texture
 @onready var invader_1_label = %Invader1Label
@@ -55,3 +56,7 @@ func quit_game():
 	get_tree().quit()
 	
 	
+
+
+func _on_check_button_toggled(toggled_on: bool) -> void:
+	Globals.toggled = toggled_on
