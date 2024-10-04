@@ -1,4 +1,5 @@
 res://start_screen.tscn
+res://Scenes/player.gd
 res://Resources/invader_config.gd
 res://Scenes/bunker_part.gd
 res://Scenes/player.tscn
@@ -8,7 +9,5 @@ res://Scenes/ui.tscn
 res://Scenes/main.tscn
 res://Scenes/invader.tscn
 res://ufo_spawner.tscn
-res://Scenes/midi_control.gd
+res://Scenes/background_music.tscn
 res://Scenes/midi_key.gd
-res://start_screen.gd
-res://globals.gd

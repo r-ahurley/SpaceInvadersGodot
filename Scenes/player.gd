@@ -18,6 +18,8 @@ var bounding_size_x
 var start_bound
 var end_bound
 
+var midi_used = false
+
 var can_shoot = true
 
 # Called when the node enters the scene tree for the first time.
@@ -40,10 +42,12 @@ func _process(delta):
 	var input = Input.get_axis("move_left", "move_right")
 	if input > 0:
 		direction = Vector2.RIGHT
+		midi_used = false
 	elif  input < 0:
 		direction = Vector2.LEFT
-	#else:
-		#direction = Vector2.ZERO
+		midi_used = false
+	elif !midi_used:
+		direction = Vector2.ZERO
 	
 	
 	var deltaMovement = speed * delta * direction.x
@@ -56,6 +60,7 @@ func _process(delta):
 func _on_note_pressed(played_note: String):
 	if played_note == "F":
 		direction = Vector2.LEFT
+		midi_used = true
 	if played_note == "G" && can_shoot:
 		can_shoot = false
 		var laser = laser_scene.instantiate() as Area2D
@@ -64,6 +69,7 @@ func _on_note_pressed(played_note: String):
 		laser.tree_exited.connect(on_laser_destroyed)
 	if played_note == "A":
 		direction = Vector2.RIGHT
+		midi_used = true
 
 func _on_note_released(played_note: String):
 	if played_note == "F" || played_note == "A":

@@ -73,14 +73,13 @@ func call_key(pitch: int, velocity: int, message: int):
 	if valid_pitches.has(pitch):
 		if message == 9 :
 			if keys_held == 0:
-				print("%s key pressed." % [pitch_letter])
-				#animated_sprite.play("on")
 				emit_signal("midi_key_pressed", pitch_letter)
-			keys_held += 1
-		elif (velocity_release == false && message == 8) || (velocity_release == true && velocity == 0):
-			print(velocity_release)
+				keys_held += 1
+			if(velocity == 0):
+				if keys_held == 1:
+					emit_signal("midi_key_released", pitch_letter)
+					keys_held -=1
+		if (message == 8):
 			if keys_held == 1:
-				print("%s key released." % [pitch_letter])
 				emit_signal("midi_key_released", pitch_letter)
-				#animated_sprite.play("off")
-			keys_held -=1
+				keys_held -=1

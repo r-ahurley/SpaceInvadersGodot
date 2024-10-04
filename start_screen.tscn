@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=3 uid="uid://dxhb6c2kqw5c7"]
+[gd_scene load_steps=12 format=3 uid="uid://dxhb6c2kqw5c7"]
 
 [ext_resource type="Script" path="res://start_screen.gd" id="1_co0ne"]
 [ext_resource type="FontFile" uid="uid://ch103gi2tob72" path="res://Assets/font/andina.ttf" id="2_3uypn"]
@@ -6,8 +6,6 @@
 [ext_resource type="Texture2D" uid="uid://m4ub6oll4ikv" path="res://Assets/Invaders/Invader3-1.png" id="2_su4we"]
 [ext_resource type="Texture2D" uid="uid://bn227mp3yqjlo" path="res://Assets/Invaders/Invader2-1.png" id="4_iod57"]
 [ext_resource type="Script" path="res://Audio controls.gd" id="6_idy13"]
-[ext_resource type="Script" path="res://globals.gd" id="7_a8und"]
-[ext_resource type="PackedScene" uid="uid://b7o8ytjjdecej" path="res://Scenes/background_music.tscn" id="7_pc6pw"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_vcw74"]
 bg_color = Color(0, 0, 0, 1)
@@ -188,29 +186,6 @@ offset_bottom = 307.0
 theme_override_font_sizes/font_size = 40
 text = "Sound Effects"
 
-[node name="Instruments" type="Label" parent="Panel"]
-layout_mode = 0
-offset_left = 401.0
-offset_top = 326.0
-offset_right = 630.0
-offset_bottom = 381.0
-theme_override_font_sizes/font_size = 40
-text = "Instrument:"
-
-[node name="OptionButton" type="OptionButton" parent="Panel"]
-layout_mode = 0
-offset_left = 772.0
-offset_top = 355.0
-offset_right = 804.0
-offset_bottom = 375.0
-selected = 0
-item_count = 3
-popup/item_0/text = "Piano"
-popup/item_1/text = "Organ"
-popup/item_1/id = 1
-popup/item_2/text = "Guitar"
-popup/item_2/id = 2
-
 [node name="Music Slider" type="HSlider" parent="Panel"]
 custom_minimum_size = Vector2(100, 59)
 layout_mode = 0
@@ -246,29 +221,9 @@ offset_right = 577.0
 offset_bottom = 526.0
 text = "Return"
 
-[node name="Label" type="Label" parent="Panel"]
-layout_mode = 0
-offset_left = 253.0
-offset_top = 405.0
-offset_right = 635.0
-offset_bottom = 447.0
-theme_override_font_sizes/font_size = 30
-text = "Velocity controlled release"
-
-[node name="CheckButton" type="CheckButton" parent="Panel"]
-layout_mode = 0
-offset_left = 771.0
-offset_top = 413.0
-offset_right = 815.0
-offset_bottom = 437.0
-script = ExtResource("7_a8und")
-
-[node name="Background Music" parent="." instance=ExtResource("7_pc6pw")]
-
 [connection signal="pressed" from="MarginContainer/VBoxContainer/CenterContainer/Button" to="." method="load_game"]
 [connection signal="pressed" from="MarginContainer/VBoxContainer/CenterContainerSettings/Button" to="." method="open_settings"]
 [connection signal="pressed" from="MarginContainer/VBoxContainer/CenterContainerQuit/Button" to="." method="quit_game"]
 [connection signal="value_changed" from="Panel/Music Slider" to="Panel/Music Slider" method="music_slider_changed"]
 [connection signal="value_changed" from="Panel/Effect Slider" to="Panel/Music Slider" method="effect_slider_changed"]
 [connection signal="pressed" from="Panel/Button" to="." method="close_settings"]
-[connection signal="toggled" from="Panel/CheckButton" to="." method="_on_check_button_toggled"]
