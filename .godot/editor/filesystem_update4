@@ -1,5 +1,4 @@
 res://start_screen.tscn
-res://Scenes/player.gd
 res://Resources/invader_config.gd
 res://Scenes/bunker_part.gd
 res://Scenes/player.tscn
