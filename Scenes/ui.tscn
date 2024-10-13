@@ -51,7 +51,7 @@ theme_override_colors/font_color = Color(1, 0, 0, 1)
 theme_override_font_sizes/font_size = 60
 text = "GAME OVER"
 
-[node name="SubmitScore" type="Button" parent="MarginContainer/CenterContainer/GameOverBox"]
+[node name="ScoreSubmissionScreen" type="Button" parent="MarginContainer/CenterContainer/GameOverBox"]
 layout_mode = 2
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_constants/outline_size = 3
@@ -67,6 +67,7 @@ text = "RESTART"
 
 [node name="CenterContainer2" type="CenterContainer" parent="MarginContainer"]
 unique_name_in_owner = true
+visible = false
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
@@ -94,5 +95,5 @@ theme_override_constants/outline_size = 3
 theme_override_styles/normal = SubResource("StyleBoxFlat_mokxj")
 text = "Submit Score"
 
-[connection signal="pressed" from="MarginContainer/CenterContainer/GameOverBox/SubmitScore" to="." method="_on_submit_score_pressed"]
+[connection signal="pressed" from="MarginContainer/CenterContainer/GameOverBox/ScoreSubmissionScreen" to="." method="_on_score_submission_screen_pressed"]
 [connection signal="pressed" from="MarginContainer/CenterContainer2/Score Submit Box/SubmitScore" to="." method="_on_submit_score_pressed"]
