@@ -21,6 +21,11 @@ func _ready() -> void:
 		piano_key.connect("midi_key_pressed", _on_midi_key_pressed)
 		piano_key.connect("midi_key_released", _on_midi_key_released)
 
+func _process(_delta):
+	if(OS.get_connected_midi_inputs().size() == 0):
+		OS.open_midi_inputs()
+		print(OS.get_connected_midi_inputs())
+
 # Called whenever an input is sensed.
 # If a keyboard key is pressed or released,
 # call check_key in every midi_key object inside of midi_keys.

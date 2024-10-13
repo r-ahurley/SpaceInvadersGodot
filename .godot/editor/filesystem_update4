@@ -19,3 +19,4 @@ res://Scenes/ui.gd
 res://globals.gd
 res://Scenes/points_counter.gd
 res://Scenes/midi_key.gd
+res://Scenes/midi_control.gd
