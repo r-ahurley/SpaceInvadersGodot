@@ -1,10 +1,11 @@
+TextEdit
+Button
 CheckButton
 Label
 MidiKey
 MidiControl
 AudioStreamPlayer
 AudioStreamPlayer2D
-Button
 Timer
 HBoxContainer
 VBoxContainer
@@ -12,4 +13,3 @@ MarginContainer
 TextureRect
 CenterContainer
 CanvasLayer
-Node

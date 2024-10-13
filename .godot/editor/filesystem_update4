@@ -1,6 +1,7 @@
-res://start_screen.tscn
 res://Resources/invader_config.gd
 res://Scenes/bunker_part.gd
+res://Scenes/leaderboard.tscn
+res://start_screen.tscn
 res://Scenes/player.tscn
 res://Scenes/midi_key.tscn
 res://midi_control.tscn
@@ -9,3 +10,12 @@ res://Scenes/main.tscn
 res://Scenes/invader.tscn
 res://ufo_spawner.tscn
 res://Scenes/background_music.tscn
+res://Addons/silent_wolf/assets/themes/sw_theme.tres
+res://start_screen.gd
+res://Scenes/ReverseLeaderboard.tscn
+res://addons/silent_wolf/examples/CustomLeaderboards/ReverseLeaderboard.gd
+res://Scenes/ReverseLeaderboard.gd
+res://Scenes/ui.gd
+res://globals.gd
+res://Scenes/points_counter.gd
+res://Scenes/midi_key.gd

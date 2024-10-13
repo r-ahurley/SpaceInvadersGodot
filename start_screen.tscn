@@ -32,14 +32,14 @@ script = ExtResource("1_co0ne")
 anchors_preset = 5
 anchor_left = 0.5
 anchor_right = 0.5
-offset_left = -306.0
-offset_top = 18.0
-offset_right = 307.0
-offset_bottom = 237.0
+offset_left = -307.0
+offset_top = -2.0
+offset_right = 306.0
+offset_bottom = 217.0
 grow_horizontal = 2
 theme_override_colors/font_color = Color(0, 1, 0, 1)
 theme_override_fonts/font = ExtResource("2_3uypn")
-theme_override_font_sizes/font_size = 107
+theme_override_font_sizes/font_size = 90
 text = "SPACE
  INVADERS"
 horizontal_alignment = 1
@@ -52,9 +52,9 @@ anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
 offset_left = -241.0
-offset_top = -114.0
+offset_top = -144.0
 offset_right = 272.0
-offset_bottom = 286.0
+offset_bottom = 256.0
 grow_horizontal = 2
 grow_vertical = 2
 
@@ -140,6 +140,16 @@ theme_override_font_sizes/font_size = 40
 theme_override_styles/normal = SubResource("StyleBoxFlat_vcw74")
 text = "Settings "
 
+[node name="CenterContainerLeaderboard" type="CenterContainer" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="Button" type="Button" parent="MarginContainer/VBoxContainer/CenterContainerLeaderboard"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_3uypn")
+theme_override_font_sizes/font_size = 40
+theme_override_styles/normal = SubResource("StyleBoxFlat_vcw74")
+text = "Leaderboard "
+
 [node name="CenterContainerQuit" type="CenterContainer" parent="MarginContainer/VBoxContainer"]
 layout_mode = 2
 
@@ -223,6 +233,7 @@ text = "Return"
 
 [connection signal="pressed" from="MarginContainer/VBoxContainer/CenterContainer/Button" to="." method="load_game"]
 [connection signal="pressed" from="MarginContainer/VBoxContainer/CenterContainerSettings/Button" to="." method="open_settings"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/CenterContainerLeaderboard/Button" to="." method="load_leaderboard"]
 [connection signal="pressed" from="MarginContainer/VBoxContainer/CenterContainerQuit/Button" to="." method="quit_game"]
 [connection signal="value_changed" from="Panel/Music Slider" to="Panel/Music Slider" method="music_slider_changed"]
 [connection signal="value_changed" from="Panel/Effect Slider" to="Panel/Music Slider" method="effect_slider_changed"]

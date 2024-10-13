@@ -37,9 +37,6 @@ var velocity_release := false
 
 func _ready():
 	
-	print(str(Globals.toggled))
-	velocity_release = Globals.toggled
-	
 #store every possible pitch code to the relevant key
 	match pitch_type:
 		0:	# Every C Key

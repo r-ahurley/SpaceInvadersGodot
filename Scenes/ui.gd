@@ -8,10 +8,14 @@ var life_texture = preload("res://Assets/Player/Player.png")
 @onready var points_label = $MarginContainer/Points
 @onready var points_counter = $"../PointsCounter" as PointsCounter
 @onready var label = $MarginContainer/CenterContainer/GameOverBox/Label
-@onready var restart_button = $MarginContainer/CenterContainer/GameOverBox/Button
+@onready var restart_button: Button = $MarginContainer/CenterContainer/GameOverBox/Restart
+@onready var submit_score: Button = $MarginContainer/CenterContainer/GameOverBox/SubmitScore
+@onready var text_edit: TextEdit = $"MarginContainer/CenterContainer2/Score Submit Box/TextEdit"
 
 @export var invader_spawner: InvaderSpawner
 @export var life_manager: LifeManager
+
+var playername = ""
 
 func _ready():
 	points_label.text = "SCORE: %d" % 0
@@ -19,6 +23,7 @@ func _ready():
 	invader_spawner.game_lost.connect(on_game_lost)
 	invader_spawner.game_won.connect(on_game_won)
 	restart_button.pressed.connect(on_restart_button_press)
+	submit_score.pressed.connect(_on_submit_score_pressed)
 	life_manager.on_life_lost.connect(on_life_lost)
 	
 	var lifes_count = life_manager.lifes
@@ -45,6 +50,12 @@ func on_game_won():
 
 func on_restart_button_press():
 	get_tree().reload_current_scene()
+	
+func _on_submit_score_pressed():
+	if(text_edit.text != ""):
+		playername = text_edit.text
+		SilentWolf.Scores.save_score(playername,Globals.score)
+		get_tree().change_scene_to_file("res://start_screen.tscn")
 
 func on_life_lost(lifes_left:int):
 	print_debug(lifes_left)

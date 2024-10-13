@@ -52,6 +52,10 @@ func close_settings():
 	Title.show()
 	Menu.show()
 	
+func load_leaderboard():
+	get_tree().change_scene_to_file("res://Scenes/ReverseLeaderboard.tscn")
+	#get_tree().change_scene_to_file("res://Addons/silent_wolf/Scores/Leaderboard.tscn")
+	
 func quit_game():
 	get_tree().quit()
 	

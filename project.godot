@@ -18,10 +18,15 @@ config/features=PackedStringArray("4.3", "Forward Plus")
 
 BackgroundMusic="*res://Scenes/background_music.tscn"
 Globals="*res://globals.gd"
+SilentWolf="*res://addons/silent_wolf/SilentWolf.gd"
 
 [display]
 
 window/stretch/mode="viewport"
+
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/silent_wolf/plugin.cfg")
 
 [input]
 
