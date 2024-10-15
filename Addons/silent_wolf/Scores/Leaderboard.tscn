@@ -16,9 +16,10 @@ visible = false
 layout_mode = 2
 
 [node name="Board" type="VBoxContainer" parent="."]
-offset_left = 275.0
-offset_right = 875.0
-offset_bottom = 400.0
+offset_left = 350.0
+offset_right = 950.0
+offset_bottom = 257.0
+scale = Vector2(0.75, 0.75)
 size_flags_horizontal = 3
 size_flags_vertical = 3
 theme = ExtResource("2_ixaq4")
