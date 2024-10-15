@@ -52,6 +52,7 @@ func configure_scores():
 })
 
 func load_game():
+	Globals.score = 0
 	get_tree().change_scene_to_file("res://Scenes/main.tscn")
 	
 func open_settings():
