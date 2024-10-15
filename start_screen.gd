@@ -18,6 +18,8 @@ signal release_toggled(toggle)
 var node_array = []
 
 func _ready():
+	Configure_Si_wolf()
+	configure_scores()
 	node_array.append(invader_1_texture)
 	node_array.append(invader_1_label)
 	node_array.append(invader_2_texture)
@@ -37,7 +39,17 @@ func on_timer_timeout():
 		timer.stop()
 		timer.queue_free()
 	
+func Configure_Si_wolf():
+	SilentWolf.configure({
+		"api_key": "ewRnPDG0kN3wXLlgdp6RYCYtAl6Da9jaTsbWVSAd",
+		"game_id": "spaceinvaders2",
+		"log_level": 1
+	})
 
+func configure_scores():
+	SilentWolf.configure_scores({
+	"open_scene_on_close": "res://start_screen.tscn"
+})
 
 func load_game():
 	get_tree().change_scene_to_file("res://Scenes/main.tscn")
@@ -53,8 +65,8 @@ func close_settings():
 	Menu.show()
 	
 func load_leaderboard():
-	get_tree().change_scene_to_file("res://Scenes/ReverseLeaderboard.tscn")
-	#get_tree().change_scene_to_file("res://Addons/silent_wolf/Scores/Leaderboard.tscn")
+	#get_tree().change_scene_to_file("res://Scenes/ReverseLeaderboard.tscn")
+	get_tree().change_scene_to_file("res://Addons/silent_wolf/Scores/Leaderboard.tscn")
 	
 func quit_game():
 	get_tree().quit()
