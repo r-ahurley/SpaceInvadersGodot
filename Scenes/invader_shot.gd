@@ -1,7 +1,7 @@
 extends Area2D
 class_name InvaderShot
 
-@export var speed = 200
+@export var speed = 150
 
 func _process(delta):
 	position.y += speed * delta

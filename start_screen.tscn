@@ -1,16 +1,49 @@
-[gd_scene load_steps=7 format=3 uid="uid://dxhb6c2kqw5c7"]
+[gd_scene load_steps=12 format=3 uid="uid://dxhb6c2kqw5c7"]
 
 [ext_resource type="Script" path="res://start_screen.gd" id="1_co0ne"]
 [ext_resource type="FontFile" uid="uid://ch103gi2tob72" path="res://Assets/font/andina.ttf" id="2_3uypn"]
 [ext_resource type="Texture2D" uid="uid://dy2h5dklc8h7p" path="res://Assets/Invaders/Invader1-1.png" id="2_pcynf"]
 [ext_resource type="Texture2D" uid="uid://m4ub6oll4ikv" path="res://Assets/Invaders/Invader3-1.png" id="2_su4we"]
 [ext_resource type="Texture2D" uid="uid://bn227mp3yqjlo" path="res://Assets/Invaders/Invader2-1.png" id="4_iod57"]
+[ext_resource type="Script" path="res://Audio controls.gd" id="6_idy13"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_vcw74"]
 bg_color = Color(0, 0, 0, 1)
 
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_7adil"]
+bg_color = Color(5.77569e-06, 0.722633, 0.278973, 1)
+border_width_left = 10
+border_width_top = 10
+border_width_right = 10
+border_width_bottom = 10
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_jutwi"]
+bg_color = Color(0.685782, 0.181974, 0.205867, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_h0d4f"]
+bg_color = Color(0.154706, 0.624147, 0.97498, 1)
+
+[sub_resource type="Theme" id="Theme_b8rur"]
+
 [node name="CanvasLayer" type="CanvasLayer"]
 script = ExtResource("1_co0ne")
+
+[node name="Label" type="Label" parent="."]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -307.0
+offset_top = -2.0
+offset_right = 306.0
+offset_bottom = 217.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(0, 1, 0, 1)
+theme_override_fonts/font = ExtResource("2_3uypn")
+theme_override_font_sizes/font_size = 90
+text = "SPACE
+ INVADERS"
+horizontal_alignment = 1
+vertical_alignment = 1
 
 [node name="MarginContainer" type="MarginContainer" parent="."]
 anchors_preset = 8
@@ -18,10 +51,10 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -237.0
-offset_top = -82.0
-offset_right = 268.0
-offset_bottom = 206.0
+offset_left = -241.0
+offset_top = -144.0
+offset_right = 272.0
+offset_bottom = 256.0
 grow_horizontal = 2
 grow_vertical = 2
 
@@ -47,7 +80,7 @@ unique_name_in_owner = true
 layout_mode = 2
 theme_override_fonts/font = ExtResource("2_3uypn")
 theme_override_font_sizes/font_size = 30
-text = " = 10 POINTS"
+text = " = 10 POINTS "
 
 [node name="HBoxContainer2" type="HBoxContainer" parent="MarginContainer/VBoxContainer"]
 layout_mode = 2
@@ -57,7 +90,7 @@ size_flags_vertical = 4
 [node name="Invader2Texture" type="TextureRect" parent="MarginContainer/VBoxContainer/HBoxContainer2"]
 unique_name_in_owner = true
 texture_filter = 1
-custom_minimum_size = Vector2(80, 60)
+custom_minimum_size = Vector2(60, 60)
 layout_mode = 2
 texture = ExtResource("4_iod57")
 
@@ -95,26 +128,113 @@ layout_mode = 2
 theme_override_fonts/font = ExtResource("2_3uypn")
 theme_override_font_sizes/font_size = 40
 theme_override_styles/normal = SubResource("StyleBoxFlat_vcw74")
-text = "PLAY SPACE INVADERS"
+text = "PLAY SPACE INVADERS "
 
-[node name="Label" type="Label" parent="."]
-anchors_preset = 5
-anchor_left = 0.5
-anchor_right = 0.5
-offset_left = -252.386
-offset_top = 20.0
-offset_right = 252.614
-offset_bottom = 43.0
-grow_horizontal = 2
-theme_override_colors/font_color = Color(0, 1, 0, 1)
+[node name="CenterContainerSettings" type="CenterContainer" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="Button" type="Button" parent="MarginContainer/VBoxContainer/CenterContainerSettings"]
+layout_mode = 2
 theme_override_fonts/font = ExtResource("2_3uypn")
-theme_override_font_sizes/font_size = 107
-text = "SPACE
- INVADERS"
-horizontal_alignment = 1
-vertical_alignment = 1
+theme_override_font_sizes/font_size = 40
+theme_override_styles/normal = SubResource("StyleBoxFlat_vcw74")
+text = "Settings "
+
+[node name="CenterContainerLeaderboard" type="CenterContainer" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="Button" type="Button" parent="MarginContainer/VBoxContainer/CenterContainerLeaderboard"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_3uypn")
+theme_override_font_sizes/font_size = 40
+theme_override_styles/normal = SubResource("StyleBoxFlat_vcw74")
+text = "Leaderboard "
+
+[node name="CenterContainerQuit" type="CenterContainer" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="Button" type="Button" parent="MarginContainer/VBoxContainer/CenterContainerQuit"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_3uypn")
+theme_override_font_sizes/font_size = 40
+theme_override_styles/normal = SubResource("StyleBoxFlat_vcw74")
+text = "Quit "
 
 [node name="Timer" type="Timer" parent="."]
 autostart = true
 
+[node name="Panel" type="Panel" parent="."]
+visible = false
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Music" type="Label" parent="Panel"]
+layout_mode = 0
+offset_left = 397.0
+offset_top = 177.0
+offset_right = 510.0
+offset_bottom = 232.0
+theme_override_font_sizes/font_size = 40
+text = "Music"
+
+[node name="Settings" type="Label" parent="Panel"]
+layout_mode = 0
+offset_left = 494.0
+offset_top = 106.0
+offset_right = 650.0
+offset_bottom = 137.0
+theme_override_fonts/font = ExtResource("2_3uypn")
+theme_override_font_sizes/font_size = 30
+text = "Settings "
+
+[node name="Sound Effects" type="Label" parent="Panel"]
+layout_mode = 0
+offset_left = 395.0
+offset_top = 252.0
+offset_right = 657.0
+offset_bottom = 307.0
+theme_override_font_sizes/font_size = 40
+text = "Sound Effects"
+
+[node name="Music Slider" type="HSlider" parent="Panel"]
+custom_minimum_size = Vector2(100, 59)
+layout_mode = 0
+offset_left = 738.0
+offset_top = 183.0
+offset_right = 838.0
+offset_bottom = 242.0
+theme_override_styles/slider = SubResource("StyleBoxFlat_7adil")
+theme_override_styles/grabber_area = SubResource("StyleBoxFlat_jutwi")
+theme_override_styles/grabber_area_highlight = SubResource("StyleBoxFlat_h0d4f")
+max_value = 1.0
+step = 0.05
+value = 0.75
+script = ExtResource("6_idy13")
+
+[node name="Effect Slider" type="HSlider" parent="Panel"]
+custom_minimum_size = Vector2(100, 59)
+layout_mode = 0
+offset_left = 748.0
+offset_top = 260.0
+offset_right = 848.0
+offset_bottom = 319.0
+theme = SubResource("Theme_b8rur")
+max_value = 1.0
+step = 0.05
+value = 0.75
+
+[node name="Button" type="Button" parent="Panel"]
+layout_mode = 0
+offset_left = 516.0
+offset_top = 495.0
+offset_right = 577.0
+offset_bottom = 526.0
+text = "Return"
+
 [connection signal="pressed" from="MarginContainer/VBoxContainer/CenterContainer/Button" to="." method="load_game"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/CenterContainerSettings/Button" to="." method="open_settings"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/CenterContainerLeaderboard/Button" to="." method="load_leaderboard"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/CenterContainerQuit/Button" to="." method="quit_game"]
+[connection signal="value_changed" from="Panel/Music Slider" to="Panel/Music Slider" method="music_slider_changed"]
+[connection signal="value_changed" from="Panel/Effect Slider" to="Panel/Music Slider" method="effect_slider_changed"]
+[connection signal="pressed" from="Panel/Button" to="." method="close_settings"]

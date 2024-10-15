@@ -1,10 +1,11 @@
-[gd_scene load_steps=17 format=3 uid="uid://cso33ws5bv6ns"]
+[gd_scene load_steps=18 format=3 uid="uid://cso33ws5bv6ns"]
 
 [ext_resource type="Script" path="res://Scenes/invader.gd" id="1_dbv3m"]
 [ext_resource type="Texture2D" uid="uid://dy2h5dklc8h7p" path="res://Assets/Invaders/Invader1-1.png" id="1_hx30d"]
 [ext_resource type="Texture2D" uid="uid://b06nkmo0fwryx" path="res://Assets/Invaders/Invader1-2.png" id="3_o8c5u"]
 [ext_resource type="Texture2D" uid="uid://bn227mp3yqjlo" path="res://Assets/Invaders/Invader2-1.png" id="4_tt7ls"]
 [ext_resource type="Texture2D" uid="uid://gf81hnr41a4c" path="res://Assets/Invaders/Invader2-2.png" id="5_e6507"]
+[ext_resource type="AudioStream" uid="uid://3tc0nlf8nrfa" path="res://Assets/Audio/Enemy_Destroyed.wav" id="5_gtgnd"]
 [ext_resource type="Texture2D" uid="uid://m4ub6oll4ikv" path="res://Assets/Invaders/Invader3-1.png" id="6_cbirj"]
 [ext_resource type="Texture2D" uid="uid://bfg1tahjcdwb4" path="res://Assets/Invaders/Invader3-2.png" id="7_715ru"]
 [ext_resource type="Texture2D" uid="uid://ctu8snp11c12t" path="res://Assets/Invaders/Invader-explosion-1.png" id="8_yekrj"]
@@ -27,10 +28,22 @@ tracks/0/keys = {
 "update": 1,
 "values": [ExtResource("1_hx30d")]
 }
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("CollisionShape2D:disabled")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
 
 [sub_resource type="Animation" id="Animation_r8k6w"]
 resource_name = "destroy"
-length = 0.2
+length = 1.5
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -38,10 +51,37 @@ tracks/0/path = NodePath("Sprite2D:texture")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.1),
+"times": PackedFloat32Array(0, 0.1, 0.166667),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 1,
+"values": [ExtResource("8_yekrj"), ExtResource("9_5q3hr"), null]
+}
+tracks/1/type = "audio"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Destroy")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"clips": [{
+"end_offset": 0.0,
+"start_offset": 0.0,
+"stream": ExtResource("5_gtgnd")
+}],
+"times": PackedFloat32Array(0)
+}
+tracks/1/use_blend = true
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("CollisionShape2D:disabled")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 2),
 "transitions": PackedFloat32Array(1, 1),
 "update": 1,
-"values": [ExtResource("8_yekrj"), ExtResource("9_5q3hr")]
+"values": [true, false]
 }
 
 [sub_resource type="Animation" id="Animation_u0v2k"]
@@ -107,6 +147,7 @@ script = ExtResource("1_dbv3m")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture_filter = 1
+scale = Vector2(0.4, 0.4)
 texture = ExtResource("1_hx30d")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
@@ -117,6 +158,8 @@ callback_mode_method = 1
 libraries = {
 "": SubResource("AnimationLibrary_wg7en")
 }
+
+[node name="Destroy" type="AudioStreamPlayer" parent="."]
 
 [connection signal="area_entered" from="." to="." method="_on_area_entered"]
 [connection signal="animation_finished" from="AnimationPlayer" to="." method="_on_animation_player_animation_finished"]

@@ -14,3 +14,4 @@ func _ready():
 func increase_points(points_to_add: int):
 	points += points_to_add
 	on_points_increased.emit(points)
+	Globals.score = points
