@@ -58,21 +58,21 @@ func _process(delta):
 	position.x += deltaMovement
 
 func _on_note_pressed(played_note: String):
-	if played_note == "F":
+	if played_note == "C":
 		direction = Vector2.LEFT
 		midi_used = true
-	if played_note == "G" && can_shoot:
+	if played_note == "D" && can_shoot:
 		can_shoot = false
 		var laser = laser_scene.instantiate() as Area2D
 		laser.global_position = shot_origin.global_position - Vector2(0, 20)
 		get_tree().root.get_node("main").add_child(laser)
 		laser.tree_exited.connect(on_laser_destroyed)
-	if played_note == "A":
+	if played_note == "E":
 		direction = Vector2.RIGHT
 		midi_used = true
 
 func _on_note_released(played_note: String):
-	if played_note == "F" || played_note == "A":
+	if played_note == "C" || played_note == "E":
 		direction = Vector2.ZERO
 
 func on_laser_destroyed():

@@ -59,7 +59,7 @@ func _on_submit_score_pressed(): #submits score and returns to main menu
 	if(text_edit.text != ""):
 		playername = text_edit.text
 		SilentWolf.Scores.save_score(playername,Globals.score)
-		get_tree().change_scene_to_file("res://start_screen.tscn")
+		get_tree().change_scene_to_file("res://Addons/silent_wolf/Scores/Leaderboard.tscn")
 		
 func _on_score_submission_screen_pressed(): #Makes the restart/submit screen invisible and displays the submit score screen
 	center_container.visible = false
