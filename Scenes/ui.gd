@@ -17,6 +17,7 @@ var life_texture = preload("res://Assets/Player/Player.png")
 
 @export var invader_spawner: InvaderSpawner
 @export var life_manager: LifeManager
+var timescore = 0
 
 var playername = ""
 
@@ -46,11 +47,15 @@ func points_increased(points: int):
 	
 func on_game_lost():
 	center_container.visible = true
+	Globals.player_alive = false
+	timescore = 0
 	
 func on_game_won():
 	label.text = "You won!"
 	label.add_theme_color_override("font_color", Color.GREEN)
 	center_container.visible = true
+	Globals.player_alive = false
+	timescore = Globals.time_bonus
 
 func on_restart_button_press():
 	get_tree().reload_current_scene()
@@ -58,7 +63,7 @@ func on_restart_button_press():
 func _on_submit_score_pressed(): #submits score and returns to main menu
 	if(text_edit.text != ""):
 		playername = text_edit.text
-		SilentWolf.Scores.save_score(playername,Globals.score)
+		SilentWolf.Scores.save_score(playername,Globals.score + timescore)
 		get_tree().change_scene_to_file("res://Addons/silent_wolf/Scores/Leaderboard.tscn")
 		
 func _on_score_submission_screen_pressed(): #Makes the restart/submit screen invisible and displays the submit score screen

@@ -2,6 +2,8 @@ extends Node
 @onready var check_button: CheckButton = $Panel/CheckButton
 
 var score = 0;
+var time_bonus = 300
+var player_alive = true
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:

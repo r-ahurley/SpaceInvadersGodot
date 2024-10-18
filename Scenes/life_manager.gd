@@ -10,6 +10,7 @@ signal on_life_lost(lifes_left: int)
 
 func _ready():
 	(player as Player).player_destroyed.connect(on_player_destroyed)
+	Globals.player_alive = true
 	
 func on_player_destroyed():
 		lifes -= 1
@@ -19,5 +20,6 @@ func on_player_destroyed():
 			player.global_position = Vector2(0, 302)
 			player.player_destroyed.connect(on_player_destroyed)
 			get_tree().root.get_node("main").add_child(player)
+
 
 	

@@ -14,3 +14,7 @@ res://Scenes/background_music.tscn
 res://Scenes/leaderboard.tscn
 res://Scenes/ReverseLeaderboard.tscn
 res://Addons/silent_wolf/Scores/Leaderboard.tscn
+res://globals.gd
+res://Scenes/points_counter.gd
+res://Scenes/ui.gd
+res://Scenes/life_manager.gd
