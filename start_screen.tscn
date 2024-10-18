@@ -29,6 +29,7 @@ bg_color = Color(0.154706, 0.624147, 0.97498, 1)
 script = ExtResource("1_co0ne")
 
 [node name="Label" type="Label" parent="."]
+visible = false
 anchors_preset = 5
 anchor_left = 0.5
 anchor_right = 0.5
@@ -46,6 +47,7 @@ horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="MarginContainer" type="MarginContainer" parent="."]
+visible = false
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
@@ -54,9 +56,10 @@ anchor_bottom = 0.5
 offset_left = -241.0
 offset_top = -144.0
 offset_right = 272.0
-offset_bottom = 256.0
+offset_bottom = 376.0
 grow_horizontal = 2
 grow_vertical = 2
+scale = Vector2(0.9, 0.9)
 
 [node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
 layout_mode = 2
@@ -130,16 +133,6 @@ theme_override_font_sizes/font_size = 40
 theme_override_styles/normal = SubResource("StyleBoxFlat_vcw74")
 text = "PLAY SPACE INVADERS "
 
-[node name="CenterContainerSettings" type="CenterContainer" parent="MarginContainer/VBoxContainer"]
-layout_mode = 2
-
-[node name="Button" type="Button" parent="MarginContainer/VBoxContainer/CenterContainerSettings"]
-layout_mode = 2
-theme_override_fonts/font = ExtResource("2_3uypn")
-theme_override_font_sizes/font_size = 40
-theme_override_styles/normal = SubResource("StyleBoxFlat_vcw74")
-text = "Settings "
-
 [node name="CenterContainerLeaderboard" type="CenterContainer" parent="MarginContainer/VBoxContainer"]
 layout_mode = 2
 
@@ -150,10 +143,30 @@ theme_override_font_sizes/font_size = 40
 theme_override_styles/normal = SubResource("StyleBoxFlat_vcw74")
 text = "Leaderboard "
 
-[node name="CenterContainerQuit" type="CenterContainer" parent="MarginContainer/VBoxContainer"]
+[node name="CenterContainerSettings" type="CenterContainer" parent="MarginContainer/VBoxContainer"]
 layout_mode = 2
 
-[node name="Button" type="Button" parent="MarginContainer/VBoxContainer/CenterContainerQuit"]
+[node name="Button" type="Button" parent="MarginContainer/VBoxContainer/CenterContainerSettings"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_3uypn")
+theme_override_font_sizes/font_size = 40
+theme_override_styles/normal = SubResource("StyleBoxFlat_vcw74")
+text = "Settings "
+
+[node name="CenterContainerHelp" type="CenterContainer" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="Button" type="Button" parent="MarginContainer/VBoxContainer/CenterContainerHelp"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_3uypn")
+theme_override_font_sizes/font_size = 40
+theme_override_styles/normal = SubResource("StyleBoxFlat_vcw74")
+text = "Help "
+
+[node name="CenterContainerQuit2" type="CenterContainer" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="Button" type="Button" parent="MarginContainer/VBoxContainer/CenterContainerQuit2"]
 layout_mode = 2
 theme_override_fonts/font = ExtResource("2_3uypn")
 theme_override_font_sizes/font_size = 40
@@ -231,10 +244,86 @@ offset_right = 577.0
 offset_bottom = 526.0
 text = "Return"
 
+[node name="HelpPanel" type="Panel" parent="."]
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Container" type="Container" parent="HelpPanel"]
+offset_left = 262.0
+offset_top = 311.0
+offset_right = 302.0
+offset_bottom = 366.0
+
+[node name="ColorRect" type="ColorRect" parent="HelpPanel/Container"]
+layout_mode = 2
+
+[node name="ColorRect2" type="ColorRect" parent="HelpPanel/Container"]
+layout_mode = 2
+
+[node name="ColorRect8" type="ColorRect" parent="HelpPanel/Container"]
+layout_mode = 2
+
+[node name="ColorRect9" type="ColorRect" parent="HelpPanel/Container"]
+layout_mode = 2
+
+[node name="ColorRect3" type="ColorRect" parent="HelpPanel/Container"]
+layout_mode = 2
+
+[node name="ColorRect4" type="ColorRect" parent="HelpPanel/Container"]
+layout_mode = 2
+
+[node name="ColorRect5" type="ColorRect" parent="HelpPanel/Container"]
+layout_mode = 2
+
+[node name="ColorRect6" type="ColorRect" parent="HelpPanel/Container"]
+layout_mode = 2
+
+[node name="ColorRect7" type="ColorRect" parent="HelpPanel/Container"]
+layout_mode = 2
+
+[node name="ColorRect10" type="ColorRect" parent="HelpPanel/Container"]
+layout_mode = 2
+color = Color(0.0110876, 0.0110876, 0.0110876, 1)
+
+[node name="ColorRect11" type="ColorRect" parent="HelpPanel/Container"]
+layout_mode = 2
+color = Color(0.0110876, 0.0110876, 0.0110876, 1)
+
+[node name="ColorRect12" type="ColorRect" parent="HelpPanel/Container"]
+layout_mode = 2
+color = Color(0.0110876, 0.0110876, 0.0110876, 1)
+
+[node name="ColorRect13" type="ColorRect" parent="HelpPanel/Container"]
+layout_mode = 2
+color = Color(0.0110876, 0.0110876, 0.0110876, 1)
+
+[node name="ColorRect14" type="ColorRect" parent="HelpPanel/Container"]
+layout_mode = 2
+color = Color(0.0110876, 0.0110876, 0.0110876, 1)
+
+[node name="Label2" type="Label" parent="HelpPanel/Container"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 20
+text = "Left"
+
+[node name="Label3" type="Label" parent="HelpPanel/Container"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 20
+text = "Fire"
+
+[node name="Label4" type="Label" parent="HelpPanel/Container"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 20
+text = "Right"
+
 [connection signal="pressed" from="MarginContainer/VBoxContainer/CenterContainer/Button" to="." method="load_game"]
-[connection signal="pressed" from="MarginContainer/VBoxContainer/CenterContainerSettings/Button" to="." method="open_settings"]
 [connection signal="pressed" from="MarginContainer/VBoxContainer/CenterContainerLeaderboard/Button" to="." method="load_leaderboard"]
-[connection signal="pressed" from="MarginContainer/VBoxContainer/CenterContainerQuit/Button" to="." method="quit_game"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/CenterContainerSettings/Button" to="." method="open_settings"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/CenterContainerHelp/Button" to="." method="open_Help"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/CenterContainerQuit2/Button" to="." method="quit_game"]
 [connection signal="value_changed" from="Panel/Music Slider" to="Panel/Music Slider" method="music_slider_changed"]
 [connection signal="value_changed" from="Panel/Effect Slider" to="Panel/Music Slider" method="effect_slider_changed"]
 [connection signal="pressed" from="Panel/Button" to="." method="close_settings"]

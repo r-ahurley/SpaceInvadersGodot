@@ -14,6 +14,7 @@ signal release_toggled(toggle)
 @onready var Menu: MarginContainer = $MarginContainer
 @onready var SettingsMenu: Panel = $Panel
 @onready var Title: Label = $Label
+@onready var help_panel: Panel = $HelpPanel
 
 var node_array = []
 
@@ -62,6 +63,16 @@ func open_settings():
 	
 func close_settings():
 	SettingsMenu.hide()
+	Title.show()
+	Menu.show()
+	
+func open_Help():
+	Menu.hide()
+	Title.hide()
+	help_panel.show()
+	
+func close_Help():
+	help_panel.hide()
 	Title.show()
 	Menu.show()
 	

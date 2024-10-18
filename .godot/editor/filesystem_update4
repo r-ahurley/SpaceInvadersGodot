@@ -18,3 +18,4 @@ res://globals.gd
 res://Scenes/points_counter.gd
 res://Scenes/ui.gd
 res://Scenes/life_manager.gd
+res://start_screen.gd
