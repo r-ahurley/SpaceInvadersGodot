@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://hp4dw24pkj1l"]
+
+[ext_resource type="Script" path="res://splash_screen.gd" id="1_24s1y"]
+[ext_resource type="Texture2D" uid="uid://ciujk4m55yu3l" path="res://musical_meteors_splash.webp" id="2_j0i4c"]
+
+[node name="SplashScreen" type="Node2D"]
+script = ExtResource("1_24s1y")
+
+[node name="MusicalMeteorsSplash" type="Sprite2D" parent="."]
+position = Vector2(600, 317)
+texture = ExtResource("2_j0i4c")

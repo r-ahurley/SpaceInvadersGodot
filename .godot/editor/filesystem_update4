@@ -13,5 +13,5 @@ res://Scenes/background_music.tscn
 res://Scenes/leaderboard.tscn
 res://Scenes/ReverseLeaderboard.tscn
 res://Addons/silent_wolf/Scores/Leaderboard.tscn
-res://start_screen.gd
-res://Scenes/points_counter.gd
+res://SplashScreen.tscn
+res://splash_screen.gd
