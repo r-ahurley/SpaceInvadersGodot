@@ -15,7 +15,7 @@ func _ready():
 func _process(delta: float):
 	if(Globals.player_alive):
 		if(Globals.time_bonus > 0):
-			Globals.time_bonus -= delta
+			Globals.time_bonus -= delta/2
 		elif(Globals.time_bonus <0):
 			Globals.time_bonus = 0
 

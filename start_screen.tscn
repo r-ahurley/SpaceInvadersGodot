@@ -29,7 +29,6 @@ bg_color = Color(0.154706, 0.624147, 0.97498, 1)
 script = ExtResource("1_co0ne")
 
 [node name="Label" type="Label" parent="."]
-visible = false
 anchors_preset = 5
 anchor_left = 0.5
 anchor_right = 0.5
@@ -47,7 +46,6 @@ horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="MarginContainer" type="MarginContainer" parent="."]
-visible = false
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
@@ -245,79 +243,150 @@ offset_bottom = 526.0
 text = "Return"
 
 [node name="HelpPanel" type="Panel" parent="."]
+visible = false
 offset_right = 40.0
 offset_bottom = 40.0
 
-[node name="Container" type="Container" parent="HelpPanel"]
-offset_left = 262.0
-offset_top = 311.0
-offset_right = 302.0
-offset_bottom = 366.0
-
-[node name="ColorRect" type="ColorRect" parent="HelpPanel/Container"]
+[node name="ColorRect" type="ColorRect" parent="HelpPanel"]
 layout_mode = 2
+offset_left = 317.0
+offset_top = 206.0
+offset_right = 367.0
+offset_bottom = 356.0
 
-[node name="ColorRect2" type="ColorRect" parent="HelpPanel/Container"]
+[node name="ColorRect2" type="ColorRect" parent="HelpPanel"]
 layout_mode = 2
+offset_left = 377.0
+offset_top = 206.0
+offset_right = 427.0
+offset_bottom = 356.0
 
-[node name="ColorRect8" type="ColorRect" parent="HelpPanel/Container"]
+[node name="ColorRect8" type="ColorRect" parent="HelpPanel"]
 layout_mode = 2
+offset_left = 437.0
+offset_top = 206.0
+offset_right = 487.0
+offset_bottom = 356.0
 
-[node name="ColorRect9" type="ColorRect" parent="HelpPanel/Container"]
+[node name="ColorRect9" type="ColorRect" parent="HelpPanel"]
 layout_mode = 2
+offset_left = 497.0
+offset_top = 206.0
+offset_right = 547.0
+offset_bottom = 356.0
 
-[node name="ColorRect3" type="ColorRect" parent="HelpPanel/Container"]
+[node name="ColorRect3" type="ColorRect" parent="HelpPanel"]
 layout_mode = 2
+offset_left = 557.0
+offset_top = 206.0
+offset_right = 607.0
+offset_bottom = 356.0
 
-[node name="ColorRect4" type="ColorRect" parent="HelpPanel/Container"]
+[node name="ColorRect4" type="ColorRect" parent="HelpPanel"]
 layout_mode = 2
+offset_left = 617.0
+offset_top = 206.0
+offset_right = 667.0
+offset_bottom = 356.0
 
-[node name="ColorRect5" type="ColorRect" parent="HelpPanel/Container"]
+[node name="ColorRect5" type="ColorRect" parent="HelpPanel"]
 layout_mode = 2
+offset_left = 677.0
+offset_top = 206.0
+offset_right = 727.0
+offset_bottom = 356.0
 
-[node name="ColorRect6" type="ColorRect" parent="HelpPanel/Container"]
+[node name="ColorRect6" type="ColorRect" parent="HelpPanel"]
 layout_mode = 2
+offset_left = 737.0
+offset_top = 206.0
+offset_right = 787.0
+offset_bottom = 356.0
 
-[node name="ColorRect7" type="ColorRect" parent="HelpPanel/Container"]
+[node name="ColorRect7" type="ColorRect" parent="HelpPanel"]
 layout_mode = 2
+offset_left = 797.0
+offset_top = 206.0
+offset_right = 847.0
+offset_bottom = 356.0
 
-[node name="ColorRect10" type="ColorRect" parent="HelpPanel/Container"]
+[node name="ColorRect10" type="ColorRect" parent="HelpPanel"]
 layout_mode = 2
+offset_left = 347.0
+offset_top = 206.0
+offset_right = 387.0
+offset_bottom = 306.0
 color = Color(0.0110876, 0.0110876, 0.0110876, 1)
 
-[node name="ColorRect11" type="ColorRect" parent="HelpPanel/Container"]
+[node name="ColorRect11" type="ColorRect" parent="HelpPanel"]
 layout_mode = 2
+offset_left = 407.0
+offset_top = 206.0
+offset_right = 447.0
+offset_bottom = 306.0
 color = Color(0.0110876, 0.0110876, 0.0110876, 1)
 
-[node name="ColorRect12" type="ColorRect" parent="HelpPanel/Container"]
+[node name="ColorRect12" type="ColorRect" parent="HelpPanel"]
 layout_mode = 2
+offset_left = 467.0
+offset_top = 206.0
+offset_right = 507.0
+offset_bottom = 306.0
 color = Color(0.0110876, 0.0110876, 0.0110876, 1)
 
-[node name="ColorRect13" type="ColorRect" parent="HelpPanel/Container"]
+[node name="ColorRect13" type="ColorRect" parent="HelpPanel"]
 layout_mode = 2
+offset_left = 587.0
+offset_top = 206.0
+offset_right = 627.0
+offset_bottom = 306.0
 color = Color(0.0110876, 0.0110876, 0.0110876, 1)
 
-[node name="ColorRect14" type="ColorRect" parent="HelpPanel/Container"]
+[node name="ColorRect14" type="ColorRect" parent="HelpPanel"]
 layout_mode = 2
+offset_left = 647.0
+offset_top = 206.0
+offset_right = 687.0
+offset_bottom = 306.0
 color = Color(0.0110876, 0.0110876, 0.0110876, 1)
 
-[node name="Label2" type="Label" parent="HelpPanel/Container"]
+[node name="Label2" type="Label" parent="HelpPanel"]
 layout_mode = 2
+offset_left = 560.0
+offset_top = 306.0
+offset_right = 598.0
+offset_bottom = 334.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 20
 text = "Left"
 
-[node name="Label3" type="Label" parent="HelpPanel/Container"]
+[node name="Label3" type="Label" parent="HelpPanel"]
 layout_mode = 2
+offset_left = 620.0
+offset_top = 306.0
+offset_right = 657.0
+offset_bottom = 334.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 20
 text = "Fire"
 
-[node name="Label4" type="Label" parent="HelpPanel/Container"]
+[node name="Label4" type="Label" parent="HelpPanel"]
 layout_mode = 2
+offset_left = 677.0
+offset_top = 306.0
+offset_right = 728.0
+offset_bottom = 334.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 20
 text = "Right"
+
+[node name="Button" type="Button" parent="HelpPanel"]
+layout_mode = 0
+offset_left = 543.0
+offset_top = 487.0
+offset_right = 604.0
+offset_bottom = 518.0
+text = "Return"
 
 [connection signal="pressed" from="MarginContainer/VBoxContainer/CenterContainer/Button" to="." method="load_game"]
 [connection signal="pressed" from="MarginContainer/VBoxContainer/CenterContainerLeaderboard/Button" to="." method="load_leaderboard"]
@@ -327,3 +396,4 @@ text = "Right"
 [connection signal="value_changed" from="Panel/Music Slider" to="Panel/Music Slider" method="music_slider_changed"]
 [connection signal="value_changed" from="Panel/Effect Slider" to="Panel/Music Slider" method="effect_slider_changed"]
 [connection signal="pressed" from="Panel/Button" to="." method="close_settings"]
+[connection signal="pressed" from="HelpPanel/Button" to="." method="close_Help"]
