@@ -48,6 +48,7 @@ func _process(delta):
 		midi_used = false
 	elif !midi_used:
 		direction = Vector2.ZERO
+
 	
 	
 	var deltaMovement = speed * delta * direction.x

@@ -18,6 +18,7 @@ var life_texture = preload("res://Assets/Player/Player.png")
 @export var invader_spawner: InvaderSpawner
 @export var life_manager: LifeManager
 var timescore = 0
+var lifescore = 150
 
 var playername = ""
 
@@ -32,6 +33,7 @@ func _ready():
 	life_manager.on_life_lost.connect(on_life_lost)
 	
 	var lifes_count = life_manager.lifes
+	lifescore = lifes_count * 50
 	
 	for i in range(lifes_count):
 		var life_texture_rect = TextureRect.new()
@@ -74,6 +76,7 @@ func _on_score_submission_screen_pressed(): #Makes the restart/submit screen inv
 
 func on_life_lost(lifes_left:int):
 	print_debug(lifes_left)
+	lifescore = lifes_left * 50
 	if lifes_left != 0:
 		var life_texture_rect: TextureRect =  lifes_ui_container.get_child(lifes_left)
 		life_texture_rect.queue_free()
