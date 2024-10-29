@@ -1,4 +1,4 @@
-res://SplashScreen.tscn
+res://Scenes/main.tscn
 res://Resources/invader_config.gd
 res://Scenes/bunker_part.gd
 res://Addons/silent_wolf/assets/themes/sw_theme.tres
@@ -7,12 +7,10 @@ res://Scenes/player.tscn
 res://Scenes/midi_key.tscn
 res://midi_control.tscn
 res://Scenes/ui.tscn
-res://Scenes/main.tscn
 res://Scenes/invader.tscn
 res://ufo_spawner.tscn
 res://Scenes/background_music.tscn
 res://Scenes/leaderboard.tscn
 res://Scenes/ReverseLeaderboard.tscn
 res://Addons/silent_wolf/Scores/Leaderboard.tscn
-res://Scenes/player.gd
-res://Scenes/ui.gd
+res://SplashScreen.tscn
