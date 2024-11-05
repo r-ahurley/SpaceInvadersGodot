@@ -15,6 +15,7 @@ signal release_toggled(toggle)
 @onready var SettingsMenu: Panel = $Panel
 @onready var Title: Label = $Label
 @onready var help_panel: Panel = $HelpPanel
+@onready var button: Button = $HelpPanel/Button
 
 var node_array = []
 
@@ -54,6 +55,12 @@ func configure_scores():
 
 func load_game():
 	Globals.score = 0
+	Menu.hide()
+	Title.hide()
+	help_panel.show()
+	button.hide()
+	await get_tree().create_timer(5).timeout
+	button.show()
 	get_tree().change_scene_to_file("res://Scenes/main.tscn")
 	
 func open_settings():
