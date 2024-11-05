@@ -100,6 +100,7 @@ func _on_bottom_wall_area_entered(area):
 func on_invader_destroyed(points: int):
 	invader_destroyed.emit(points)
 	invader_destroyed_count += 1
+	shot_timer.wait_time += 0.01
 	if invader_destroyed_count == invader_total_count:
 		game_won.emit()
 		shot_timer.stop()
