@@ -73,7 +73,7 @@ func _on_note_pressed(played_note: String):
 		midi_used = true
 
 func _on_note_released(played_note: String):
-	if played_note == "C" || played_note == "E":
+	if played_note == "C" || played_note == "D":
 		direction = Vector2.ZERO
 
 func on_laser_destroyed():

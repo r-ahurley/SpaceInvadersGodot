@@ -29,6 +29,7 @@ bg_color = Color(0.154706, 0.624147, 0.97498, 1)
 script = ExtResource("1_co0ne")
 
 [node name="Label" type="Label" parent="."]
+visible = false
 anchors_preset = 5
 anchor_left = 0.5
 anchor_right = 0.5
@@ -46,6 +47,7 @@ horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="MarginContainer" type="MarginContainer" parent="."]
+visible = false
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
@@ -243,139 +245,147 @@ offset_bottom = 526.0
 text = "Return"
 
 [node name="HelpPanel" type="Panel" parent="."]
-visible = false
 offset_right = 40.0
 offset_bottom = 40.0
 
-[node name="ColorRect" type="ColorRect" parent="HelpPanel"]
-layout_mode = 2
-offset_left = 317.0
-offset_top = 206.0
-offset_right = 367.0
-offset_bottom = 356.0
-
-[node name="ColorRect2" type="ColorRect" parent="HelpPanel"]
-layout_mode = 2
-offset_left = 377.0
-offset_top = 206.0
-offset_right = 427.0
-offset_bottom = 356.0
-
 [node name="ColorRect8" type="ColorRect" parent="HelpPanel"]
 layout_mode = 2
-offset_left = 437.0
-offset_top = 206.0
-offset_right = 487.0
-offset_bottom = 356.0
+offset_left = 401.0
+offset_top = 217.0
+offset_right = 451.0
+offset_bottom = 367.0
 
 [node name="ColorRect9" type="ColorRect" parent="HelpPanel"]
 layout_mode = 2
-offset_left = 497.0
-offset_top = 206.0
-offset_right = 547.0
-offset_bottom = 356.0
+offset_left = 461.0
+offset_top = 217.0
+offset_right = 511.0
+offset_bottom = 367.0
 
 [node name="ColorRect3" type="ColorRect" parent="HelpPanel"]
 layout_mode = 2
-offset_left = 557.0
-offset_top = 206.0
-offset_right = 607.0
-offset_bottom = 356.0
+offset_left = 521.0
+offset_top = 217.0
+offset_right = 571.0
+offset_bottom = 367.0
 
 [node name="ColorRect4" type="ColorRect" parent="HelpPanel"]
 layout_mode = 2
-offset_left = 617.0
-offset_top = 206.0
-offset_right = 667.0
-offset_bottom = 356.0
+offset_left = 581.0
+offset_top = 217.0
+offset_right = 631.0
+offset_bottom = 367.0
 
 [node name="ColorRect5" type="ColorRect" parent="HelpPanel"]
 layout_mode = 2
-offset_left = 677.0
-offset_top = 206.0
-offset_right = 727.0
-offset_bottom = 356.0
+offset_left = 641.0
+offset_top = 217.0
+offset_right = 691.0
+offset_bottom = 367.0
 
 [node name="ColorRect6" type="ColorRect" parent="HelpPanel"]
 layout_mode = 2
-offset_left = 737.0
-offset_top = 206.0
-offset_right = 787.0
-offset_bottom = 356.0
+offset_left = 701.0
+offset_top = 217.0
+offset_right = 751.0
+offset_bottom = 367.0
 
 [node name="ColorRect7" type="ColorRect" parent="HelpPanel"]
 layout_mode = 2
-offset_left = 797.0
-offset_top = 206.0
-offset_right = 847.0
-offset_bottom = 356.0
+offset_left = 761.0
+offset_top = 217.0
+offset_right = 811.0
+offset_bottom = 367.0
 
 [node name="ColorRect10" type="ColorRect" parent="HelpPanel"]
 layout_mode = 2
-offset_left = 347.0
-offset_top = 206.0
-offset_right = 387.0
-offset_bottom = 306.0
+offset_left = 731.0
+offset_top = 217.0
+offset_right = 771.0
+offset_bottom = 317.0
 color = Color(0.0110876, 0.0110876, 0.0110876, 1)
+
+[node name="ColorRect15" type="ColorRect" parent="HelpPanel"]
+layout_mode = 2
+offset_left = 791.0
+offset_top = 217.0
+offset_right = 831.0
+offset_bottom = 317.0
+color = Color(0.0110876, 0.0110876, 0.0110876, 1)
+
+[node name="ColorRect16" type="ColorRect" parent="HelpPanel"]
+layout_mode = 2
+offset_left = 341.0
+offset_top = 217.0
+offset_right = 391.0
+offset_bottom = 367.0
 
 [node name="ColorRect11" type="ColorRect" parent="HelpPanel"]
 layout_mode = 2
-offset_left = 407.0
-offset_top = 206.0
-offset_right = 447.0
-offset_bottom = 306.0
+offset_left = 371.0
+offset_top = 217.0
+offset_right = 411.0
+offset_bottom = 317.0
+color = Color(0.0110876, 0.0110876, 0.0110876, 1)
+
+[node name="ColorRect17" type="ColorRect" parent="HelpPanel"]
+layout_mode = 2
+offset_left = 312.0
+offset_top = 216.0
+offset_right = 352.0
+offset_bottom = 316.0
 color = Color(0.0110876, 0.0110876, 0.0110876, 1)
 
 [node name="ColorRect12" type="ColorRect" parent="HelpPanel"]
 layout_mode = 2
-offset_left = 467.0
-offset_top = 206.0
-offset_right = 507.0
-offset_bottom = 306.0
+offset_left = 431.0
+offset_top = 217.0
+offset_right = 471.0
+offset_bottom = 317.0
 color = Color(0.0110876, 0.0110876, 0.0110876, 1)
 
 [node name="ColorRect13" type="ColorRect" parent="HelpPanel"]
 layout_mode = 2
-offset_left = 587.0
-offset_top = 206.0
-offset_right = 627.0
-offset_bottom = 306.0
+offset_left = 551.0
+offset_top = 217.0
+offset_right = 591.0
+offset_bottom = 317.0
 color = Color(0.0110876, 0.0110876, 0.0110876, 1)
 
 [node name="ColorRect14" type="ColorRect" parent="HelpPanel"]
 layout_mode = 2
-offset_left = 647.0
-offset_top = 206.0
-offset_right = 687.0
-offset_bottom = 306.0
+offset_left = 611.0
+offset_top = 217.0
+offset_right = 651.0
+offset_bottom = 317.0
 color = Color(0.0110876, 0.0110876, 0.0110876, 1)
 
 [node name="Label2" type="Label" parent="HelpPanel"]
 layout_mode = 2
-offset_left = 560.0
-offset_top = 306.0
-offset_right = 598.0
-offset_bottom = 334.0
+offset_left = 524.0
+offset_top = 317.0
+offset_right = 562.0
+offset_bottom = 345.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 20
 text = "Left"
 
 [node name="Label3" type="Label" parent="HelpPanel"]
 layout_mode = 2
-offset_left = 620.0
-offset_top = 306.0
-offset_right = 657.0
-offset_bottom = 334.0
-theme_override_colors/font_color = Color(0, 0, 0, 1)
+offset_left = 732.0
+offset_top = 261.0
+offset_right = 769.0
+offset_bottom = 289.0
+theme_override_colors/font_color = Color(0.991164, 0.991164, 0.991164, 1)
 theme_override_font_sizes/font_size = 20
 text = "Fire"
 
 [node name="Label4" type="Label" parent="HelpPanel"]
 layout_mode = 2
-offset_left = 677.0
-offset_top = 306.0
-offset_right = 728.0
-offset_bottom = 334.0
+offset_left = 581.0
+offset_top = 317.0
+offset_right = 632.0
+offset_bottom = 345.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 20
 text = "Right"
