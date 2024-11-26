@@ -12,3 +12,10 @@ func _on_spawn_timer_timeout():
 	var ufo = ufo_scene.instantiate()
 	ufo.global_position = position
 	get_tree().root.add_child(ufo)
+	
+
+
+
+func _on_ui_game_over() -> void:
+	ufo_spawn_timer.stop()
+	

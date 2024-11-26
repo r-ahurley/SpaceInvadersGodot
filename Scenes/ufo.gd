@@ -6,6 +6,7 @@ class_name Ufo
 @onready var sprite = $Sprite2D
 @onready var shooting_point = $ShootingPoint 
 var explosion_texture = preload("res://Assets/Ufo/Ufo-explosion.png")
+@onready var points_counter: PointsCounter = $PointsCounter
 
 func _process(delta):
 	position.x -= delta * speed
@@ -21,5 +22,6 @@ func _on_area_entered(area):
 			shooting_point.queue_free()
 		speed = 0
 		sprite.texture = explosion_texture
+		points_counter.increase_points(100)
 		await get_tree().create_timer(1.5).timeout
 		queue_free()

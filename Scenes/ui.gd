@@ -2,6 +2,8 @@ extends CanvasLayer
 
 var life_texture = preload("res://Assets/Player/Player.png")
 
+signal game_over
+
 @onready var lifes_ui_container = $MarginContainer/HBoxContainer
 
 @onready var center_container = %CenterContainer
@@ -16,6 +18,8 @@ var life_texture = preload("res://Assets/Player/Player.png")
 @onready var score_submission_screen: Button = $MarginContainer/CenterContainer/GameOverBox/ScoreSubmissionScreen
 
 @export var invader_spawner: InvaderSpawner
+@onready var ufo_spawner: Node2D = $"../UfoSpawner"
+
 @export var life_manager: LifeManager
 var timescore = 0
 var lifescore = 150
@@ -51,6 +55,9 @@ func on_game_lost():
 	center_container.visible = true
 	Globals.player_alive = false
 	timescore = 0
+	emit_signal("game_over")
+	
+
 	
 func on_game_won():
 	label.text = "You won!"
@@ -58,6 +65,8 @@ func on_game_won():
 	center_container.visible = true
 	Globals.player_alive = false
 	timescore = Globals.time_bonus
+	emit_signal("game_over")
+
 
 func on_restart_button_press():
 	get_tree().reload_current_scene()

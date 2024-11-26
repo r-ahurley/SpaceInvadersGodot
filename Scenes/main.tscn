@@ -88,3 +88,4 @@ life_manager = NodePath("../LifeManager")
 [connection signal="area_entered" from="Walls/RightWall" to="InvaderSpawner" method="_on_right_wall_area_entered"]
 [connection signal="area_entered" from="Walls/LeftWall" to="InvaderSpawner" method="_on_left_wall_area_entered"]
 [connection signal="area_entered" from="Walls/BottomWall" to="InvaderSpawner" method="_on_bottom_wall_area_entered"]
+[connection signal="game_over" from="UI" to="UfoSpawner" method="_on_ui_game_over"]
