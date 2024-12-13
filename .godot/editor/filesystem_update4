@@ -19,3 +19,6 @@ res://SplashScreen.tscn
 res://Scenes/invader_spawner.tscn
 res://Scenes/ufo.tscn
 res://Scenes/laser.tscn
+res://Scenes/ufo.gd
+res://Scenes/points_counter.gd
+res://Scenes/ufo_spawner.gd

@@ -7,10 +7,13 @@ signal on_points_increased(points: int)
 var points = 0
 
 @onready var invader_spawner = $"../InvaderSpawner" as InvaderSpawner
+@onready var ufo_spawner: Node2D = $"../UfoSpawner"
 
 func _ready():
 	Globals.time_bonus = 300
 	invader_spawner.invader_destroyed.connect(increase_points)
+	ufo_spawner.ufo_destroyed.connect(increase_points)
+	
 
 func _process(delta: float):
 	if(Globals.player_alive):
