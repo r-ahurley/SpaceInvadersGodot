@@ -1,5 +1,6 @@
-[gd_scene load_steps=12 format=3 uid="uid://x52tm03ns8q"]
+[gd_scene load_steps=13 format=3 uid="uid://x52tm03ns8q"]
 
+[ext_resource type="Texture2D" uid="uid://dj68uh5ww5b08" path="res://Scenes/teuto_forest.jpg" id="1_rut4m"]
 [ext_resource type="PackedScene" uid="uid://dtone6hpojcx1" path="res://Scenes/player.tscn" id="1_tywl6"]
 [ext_resource type="PackedScene" uid="uid://dfn1yx70sdynd" path="res://Scenes/bullet_catcher.tscn" id="2_0880y"]
 [ext_resource type="PackedScene" uid="uid://mgomvu2yo3u5" path="res://Scenes/invader_spawner.tscn" id="3_sn81r"]
@@ -17,6 +18,11 @@ size = Vector2(40, 617)
 size = Vector2(1200, 64)
 
 [node name="main" type="Node"]
+
+[node name="TeutoForest" type="Sprite2D" parent="."]
+position = Vector2(-5, 5)
+scale = Vector2(1.66903, 1.70833)
+texture = ExtResource("1_rut4m")
 
 [node name="Player" parent="." instance=ExtResource("1_tywl6")]
 position = Vector2(0, 302)

@@ -1,14 +1,18 @@
-[gd_scene load_steps=12 format=3 uid="uid://dxhb6c2kqw5c7"]
+[gd_scene load_steps=14 format=3 uid="uid://dxhb6c2kqw5c7"]
 
 [ext_resource type="Script" path="res://start_screen.gd" id="1_co0ne"]
 [ext_resource type="FontFile" uid="uid://ch103gi2tob72" path="res://Assets/font/andina.ttf" id="2_3uypn"]
 [ext_resource type="Texture2D" uid="uid://dy2h5dklc8h7p" path="res://Assets/Invaders/Invader1-1.png" id="2_pcynf"]
 [ext_resource type="Texture2D" uid="uid://m4ub6oll4ikv" path="res://Assets/Invaders/Invader3-1.png" id="2_su4we"]
+[ext_resource type="Texture2D" uid="uid://oft5ae0wtqnf" path="res://Assets/Player/mainforest.jpg" id="2_tci76"]
 [ext_resource type="Texture2D" uid="uid://bn227mp3yqjlo" path="res://Assets/Invaders/Invader2-1.png" id="4_iod57"]
 [ext_resource type="Script" path="res://Audio controls.gd" id="6_idy13"]
 
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_f1tbt"]
+bg_color = Color(0.699653, 0.699654, 0.699653, 0.631373)
+
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_vcw74"]
-bg_color = Color(0, 0, 0, 1)
+bg_color = Color(0.698039, 0.698039, 0.698039, 0.631373)
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_7adil"]
 bg_color = Color(5.77569e-06, 0.722633, 0.278973, 1)
@@ -28,6 +32,11 @@ bg_color = Color(0.154706, 0.624147, 0.97498, 1)
 [node name="CanvasLayer" type="CanvasLayer"]
 script = ExtResource("1_co0ne")
 
+[node name="Mainforest" type="Sprite2D" parent="."]
+position = Vector2(563, 333)
+scale = Vector2(1.78125, 1.92708)
+texture = ExtResource("2_tci76")
+
 [node name="Label" type="Label" parent="."]
 anchors_preset = 5
 anchor_left = 0.5
@@ -37,11 +46,13 @@ offset_top = -2.0
 offset_right = 306.0
 offset_bottom = 217.0
 grow_horizontal = 2
-theme_override_colors/font_color = Color(0, 1, 0, 1)
+theme_override_colors/font_color = Color(0.626789, 0.106657, 0.0615332, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 10
 theme_override_fonts/font = ExtResource("2_3uypn")
 theme_override_font_sizes/font_size = 90
-text = "SPACE
- INVADERS"
+text = "Lunar
+Legionnaire"
 horizontal_alignment = 1
 vertical_alignment = 1
 
@@ -51,10 +62,10 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -241.0
-offset_top = -144.0
-offset_right = 272.0
-offset_bottom = 376.0
+offset_left = -151.0
+offset_top = -146.0
+offset_right = 191.0
+offset_bottom = 378.0
 grow_horizontal = 2
 grow_vertical = 2
 scale = Vector2(0.9, 0.9)
@@ -126,16 +137,22 @@ layout_mode = 2
 
 [node name="Button" type="Button" parent="MarginContainer/VBoxContainer/CenterContainer"]
 layout_mode = 2
+theme_override_colors/font_focus_color = Color(0.627451, 0.105882, 0.0627451, 1)
+theme_override_colors/font_color = Color(0.627451, 0.105882, 0.0627451, 1)
+theme_override_colors/font_outline_color = Color(0.277528, 0.277528, 0.277528, 1)
+theme_override_constants/outline_size = 2
 theme_override_fonts/font = ExtResource("2_3uypn")
-theme_override_font_sizes/font_size = 40
-theme_override_styles/normal = SubResource("StyleBoxFlat_vcw74")
-text = "PLAY SPACE INVADERS "
+theme_override_font_sizes/font_size = 43
+theme_override_styles/normal = SubResource("StyleBoxFlat_f1tbt")
+text = " PLAY "
 
 [node name="CenterContainerLeaderboard" type="CenterContainer" parent="MarginContainer/VBoxContainer"]
 layout_mode = 2
 
 [node name="Button" type="Button" parent="MarginContainer/VBoxContainer/CenterContainerLeaderboard"]
 layout_mode = 2
+theme_override_colors/font_focus_color = Color(0.627451, 0.105882, 0.0627451, 1)
+theme_override_colors/font_color = Color(0.627451, 0.105882, 0.0627451, 1)
 theme_override_fonts/font = ExtResource("2_3uypn")
 theme_override_font_sizes/font_size = 40
 theme_override_styles/normal = SubResource("StyleBoxFlat_vcw74")
@@ -146,6 +163,8 @@ layout_mode = 2
 
 [node name="Button" type="Button" parent="MarginContainer/VBoxContainer/CenterContainerSettings"]
 layout_mode = 2
+theme_override_colors/font_focus_color = Color(0.627451, 0.105882, 0.0627451, 1)
+theme_override_colors/font_color = Color(0.627451, 0.105882, 0.0627451, 1)
 theme_override_fonts/font = ExtResource("2_3uypn")
 theme_override_font_sizes/font_size = 40
 theme_override_styles/normal = SubResource("StyleBoxFlat_vcw74")
@@ -156,6 +175,8 @@ layout_mode = 2
 
 [node name="Button" type="Button" parent="MarginContainer/VBoxContainer/CenterContainerHelp"]
 layout_mode = 2
+theme_override_colors/font_focus_color = Color(0.627451, 0.105882, 0.0627451, 1)
+theme_override_colors/font_color = Color(0.627451, 0.105882, 0.0627451, 1)
 theme_override_fonts/font = ExtResource("2_3uypn")
 theme_override_font_sizes/font_size = 40
 theme_override_styles/normal = SubResource("StyleBoxFlat_vcw74")
@@ -166,6 +187,8 @@ layout_mode = 2
 
 [node name="Button" type="Button" parent="MarginContainer/VBoxContainer/CenterContainerQuit2"]
 layout_mode = 2
+theme_override_colors/font_focus_color = Color(0.627451, 0.105882, 0.0627451, 1)
+theme_override_colors/font_color = Color(0.627451, 0.105882, 0.0627451, 1)
 theme_override_fonts/font = ExtResource("2_3uypn")
 theme_override_font_sizes/font_size = 40
 theme_override_styles/normal = SubResource("StyleBoxFlat_vcw74")
