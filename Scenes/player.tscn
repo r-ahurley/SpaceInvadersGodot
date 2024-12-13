@@ -10,7 +10,7 @@
 [ext_resource type="AudioStream" uid="uid://yon7d5k2aonu" path="res://Assets/Audio/Player_Destroyed.wav" id="9_ef3d3"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_w7q3x"]
-size = Vector2(1.26316, 3.15789)
+size = Vector2(5.47368, 14.9474)
 
 [sub_resource type="Animation" id="Animation_4igqk"]
 length = 0.001
@@ -102,7 +102,7 @@ scale = Vector2(0.25, 0.25)
 texture = ExtResource("1_iyxsd")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(-1, 0.5)
+position = Vector2(-4, 0.5)
 scale = Vector2(4.75, 4.75)
 shape = SubResource("RectangleShape2D_w7q3x")
 

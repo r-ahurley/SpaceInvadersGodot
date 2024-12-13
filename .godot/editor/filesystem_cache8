@@ -1,17 +1,17 @@
 fc8a56933c4b1c8d796fdb8f7a9f9475
-::res://::1734113534
+::res://::1734114573
 Audio controls.gd::GDScript::-1::1729011085::0::1::::<>HSlider<>::
 default_bus_layout.tres::AudioBusLayout::2925162785595488756::1729011085::0::1::::<><>::
 export_presets.cfg::TextFile::-1::1733252888::0::1::::<><>::
 globals.gd::GDScript::-1::1729270604::0::1::::<>Node<>::
-midi_control.tscn::PackedScene::4213194596437299801::1734113532::0::1::::<><>::res://Scenes/midi_control.gd<>res://Scenes/midi_key.gd
+midi_control.tscn::PackedScene::4213194596437299801::1734114519::0::1::::<><>::res://Scenes/midi_control.gd<>res://Scenes/midi_key.gd
 musical_meteors_splash.webp::CompressedTexture2D::5376205525564531187::1730218795::1733856475::1::::<><>::
 spawn_timer.gd::GDScript::-1::1729009896::0::1::::SpawnTimer<>Timer<>::
-SplashScreen.tscn::PackedScene::524054920510564547::1734113534::0::1::::<><>::res://splash_screen.gd<>uid://ciujk4m55yu3l::::res://musical_meteors_splash.webp
+SplashScreen.tscn::PackedScene::524054920510564547::1734114520::0::1::::<><>::res://splash_screen.gd<>uid://ciujk4m55yu3l::::res://musical_meteors_splash.webp
 splash_screen.gd::GDScript::-1::1730218795::0::1::::<>Node2D<>::
 start_screen.gd::GDScript::-1::1730832295::0::1::::<>CanvasLayer<>::
-start_screen.tscn::PackedScene::8788172322869339276::1734113531::0::1::::<><>::res://start_screen.gd<>uid://ch103gi2tob72::::res://Assets/font/andina.ttf<>uid://dy2h5dklc8h7p::::res://Assets/Invaders/Invader1-1.png<>uid://m4ub6oll4ikv::::res://Assets/Invaders/Invader3-1.png<>uid://bn227mp3yqjlo::::res://Assets/Invaders/Invader2-1.png<>res://Audio controls.gd
-ufo_spawner.tscn::PackedScene::8133555658802623827::1734113533::0::1::::<><>::res://Scenes/ufo_spawner.gd<>res://spawn_timer.gd<>uid://dwdc1f60bekgq::::res://Scenes/ufo.tscn
+start_screen.tscn::PackedScene::8788172322869339276::1734114519::0::1::::<><>::res://start_screen.gd<>uid://ch103gi2tob72::::res://Assets/font/andina.ttf<>uid://dy2h5dklc8h7p::::res://Assets/Invaders/Invader1-1.png<>uid://m4ub6oll4ikv::::res://Assets/Invaders/Invader3-1.png<>uid://oft5ae0wtqnf::::res://Assets/Player/mainforest.jpg<>uid://bn227mp3yqjlo::::res://Assets/Invaders/Invader2-1.png<>res://Audio controls.gd
+ufo_spawner.tscn::PackedScene::8133555658802623827::1734114520::0::1::::<><>::res://Scenes/ufo_spawner.gd<>res://spawn_timer.gd<>uid://dwdc1f60bekgq::::res://Scenes/ufo.tscn
 ::res://Addons/::1729011085
 ::res://Addons/silent_wolf/::1729011085
 plugin.cfg::TextFile::-1::1729011085::0::1::::<><>::
@@ -58,9 +58,9 @@ Multiplayer.gd::GDScript::-1::1729011085::0::1::::<>Node<>::
 WSClient.gd::GDScript::-1::1729011085::0::1::::<>Node<>::
 ::res://Addons/silent_wolf/Players/::1734113026
 Players.gd::GDScript::-1::1734113026::0::1::::<>Node<>::
-::res://Addons/silent_wolf/Scores/::1734113533
+::res://Addons/silent_wolf/Scores/::1734114520
 Leaderboard.gd::GDScript::-1::1729011085::0::1::::<>Node2D<>::
-Leaderboard.tscn::PackedScene::4297999345383651085::1734113533::0::1::::<><>::res://addons/silent_wolf/Scores/Leaderboard.gd<>uid://d2eakbmaefnt6::::res://Addons/silent_wolf/assets/themes/sw_theme.tres<>uid://clllbf6am8qdf::::res://Addons/silent_wolf/common/SWButton.tscn
+Leaderboard.tscn::PackedScene::4297999345383651085::1734114520::0::1::::<><>::res://addons/silent_wolf/Scores/Leaderboard.gd<>uid://d2eakbmaefnt6::::res://Addons/silent_wolf/assets/themes/sw_theme.tres<>uid://clllbf6am8qdf::::res://Addons/silent_wolf/common/SWButton.tscn
 ScoreItem.tscn::PackedScene::1942024293390844209::1729011085::0::1::::<><>::
 Scores.gd::GDScript::-1::1729011085::0::1::::<>Node<>::
 ::res://Addons/silent_wolf/utils/::1729011085
@@ -134,36 +134,36 @@ invader_1.tres::Resource/InvaderResource::2847158028787434009::1729011085::0::1:
 invader_2.tres::Resource/InvaderResource::5375839133305663994::1729011085::0::1::::<><>::res://Resources/invader_config.gd<>uid://bn227mp3yqjlo::::res://Assets/Invaders/Invader2-1.png<>uid://gf81hnr41a4c::::res://Assets/Invaders/Invader2-2.png
 invader_3.tres::Resource/InvaderResource::3029795632646225879::1726593334::0::1::::<><>::res://Resources/invader_config.gd<>uid://m4ub6oll4ikv::::res://Assets/Invaders/Invader3-1.png<>uid://bfg1tahjcdwb4::::res://Assets/Invaders/Invader3-2.png
 invader_config.gd::GDScript::-1::1734113026::0::1::::InvaderResource<>Resource<>::
-::res://Scenes/::1734113534
-background_music.tscn::PackedScene::4663412500741965001::1734113533::0::1::::<><>::uid://lu2u2gmb8w6y::::res://Assets/Audio/Space Invaders Main Menu.mp3
+::res://Scenes/::1734114521
+background_music.tscn::PackedScene::4663412500741965001::1734114520::0::1::::<><>::uid://lu2u2gmb8w6y::::res://Assets/Audio/Space Invaders Main Menu.mp3
 bullet_catcher.gd::GDScript::-1::1729009894::0::1::::<>Area2D<>::
 bullet_catcher.tscn::PackedScene::7538665939568768117::1726849573::0::1::::<><>::res://Scenes/bullet_catcher.gd
 bunker.tscn::PackedScene::7092537901200631666::1727120034::0::1::::<><>::uid://3bevny4pavby::::res://Assets/Bunker/BunkerTopLeft-1.png<>res://Scenes/bunker_part.gd<>uid://d07veflsoey5q::::res://Assets/Bunker/BunkerTopRight-1.png<>uid://ss5c0vnqe4ej::::res://Assets/Bunker/BunkerTopLeft-2.png<>uid://cov1x8ksvwpia::::res://Assets/Bunker/BunkerTopLeft-3.png<>uid://cht8xskkgm5fq::::res://Assets/Bunker/BunkerBottomLeft-1.png<>uid://cwq874drcul5i::::res://Assets/Bunker/BunkerBottomRight-1.png<>uid://ccurrcerj0xjf::::res://Assets/Bunker/BunkerTopLeft-4.png<>uid://x8lxpopv1tkr::::res://Assets/Bunker/BunkerTopRight-2.png<>uid://5yppp0dail6a::::res://Assets/Bunker/BunkerTopRight-3.png<>uid://ortn3gmla0a8::::res://Assets/Bunker/BunkerTopRight-4.png<>uid://c35b84tvemc6e::::res://Assets/Bunker/BunkerBottomLeft-2.png<>uid://b5iqf0x0gubf2::::res://Assets/Bunker/BunkerBottomLeft-3.png<>uid://7huonn0qn4c1::::res://Assets/Bunker/BunkerBottomLeft-4.png<>uid://dp1kv0pea7a3s::::res://Assets/Bunker/BunkerBottomRight-2.png<>uid://dsq1883hm3b3l::::res://Assets/Bunker/BunkerBottomRight-3.png<>uid://dkmmxsnqmvt5t::::res://Assets/Bunker/BunkerBottomRight-4.png
 bunker_part.gd::GDScript::-1::1734113026::0::1::::<>Area2D<>::
 invader.gd::GDScript::-1::1729009894::0::1::::Invader<>Area2D<>::
-invader.tscn::PackedScene::6066893104139863360::1734113533::0::1::::<><>::res://Scenes/invader.gd<>uid://dy2h5dklc8h7p::::res://Assets/Invaders/Invader1-1.png<>uid://b06nkmo0fwryx::::res://Assets/Invaders/Invader1-2.png<>uid://bn227mp3yqjlo::::res://Assets/Invaders/Invader2-1.png<>uid://gf81hnr41a4c::::res://Assets/Invaders/Invader2-2.png<>uid://3tc0nlf8nrfa::::res://Assets/Audio/Enemy_Destroyed.wav<>uid://m4ub6oll4ikv::::res://Assets/Invaders/Invader3-1.png<>uid://bfg1tahjcdwb4::::res://Assets/Invaders/Invader3-2.png<>uid://ctu8snp11c12t::::res://Assets/Invaders/Invader-explosion-1.png<>uid://dcoy6mphlfi8i::::res://Assets/Invaders/Invader-explosion-2.png
+invader.tscn::PackedScene::6066893104139863360::1734114520::0::1::::<><>::res://Scenes/invader.gd<>uid://dy2h5dklc8h7p::::res://Assets/Invaders/Invader1-1.png<>uid://b06nkmo0fwryx::::res://Assets/Invaders/Invader1-2.png<>uid://bn227mp3yqjlo::::res://Assets/Invaders/Invader2-1.png<>uid://gf81hnr41a4c::::res://Assets/Invaders/Invader2-2.png<>uid://3tc0nlf8nrfa::::res://Assets/Audio/Enemy_Destroyed.wav<>uid://m4ub6oll4ikv::::res://Assets/Invaders/Invader3-1.png<>uid://bfg1tahjcdwb4::::res://Assets/Invaders/Invader3-2.png<>uid://ctu8snp11c12t::::res://Assets/Invaders/Invader-explosion-1.png<>uid://dcoy6mphlfi8i::::res://Assets/Invaders/Invader-explosion-2.png
 invader_shot.gd::GDScript::-1::1729011085::0::1::::InvaderShot<>Area2D<>::
 invader_shot.tscn::PackedScene::805933660328085445::1727120034::0::1::::<><>::res://Scenes/invader_shot.gd<>uid://dqyn6gkxj6slf::::res://Assets/Weapons/Rocket.png
 invader_spawner.gd::GDScript::-1::1732299938::0::1::::InvaderSpawner<>Node2D<>::
-invader_spawner.tscn::PackedScene::855524992752189702::1734113534::0::1::::<><>::res://Scenes/invader_spawner.gd
+invader_spawner.tscn::PackedScene::855524992752189702::1734114521::0::1::::<><>::res://Scenes/invader_spawner.gd
 laser.gd::GDScript::-1::1729011085::0::1::::Laser<>Area2D<>::
-laser.tscn::PackedScene::3388645286123545192::1734113534::0::1::::<><>::uid://bggjitmo1byod::::res://Assets/Weapons/Laser.png<>res://Scenes/laser.gd
-leaderboard.tscn::PackedScene::1120975249932364339::1734113533::0::1::::<><>::
+laser.tscn::PackedScene::3388645286123545192::1734114521::0::1::::<><>::uid://bggjitmo1byod::::res://Assets/Weapons/Laser.png<>res://Scenes/laser.gd
+leaderboard.tscn::PackedScene::1120975249932364339::1734114520::0::1::::<><>::
 life_manager.gd::GDScript::-1::1729270848::0::1::::LifeManager<>Node<>::
-main.tscn::PackedScene::49351432216942594::1734113532::0::1::::<><>::uid://dj68uh5ww5b08::::res://Scenes/teuto_forest.jpg<>uid://dtone6hpojcx1::::res://Scenes/player.tscn<>uid://dfn1yx70sdynd::::res://Scenes/bullet_catcher.tscn<>uid://mgomvu2yo3u5::::res://Scenes/invader_spawner.tscn<>uid://dn47qdhpsw0s2::::res://ufo_spawner.tscn<>uid://c8bxce3fgs58i::::res://Scenes/bunker.tscn<>res://Scenes/life_manager.gd<>res://Scenes/points_counter.gd<>uid://belx0qfvh4cii::::res://Scenes/ui.tscn<>uid://b1a5x1tdnmkvx::::res://midi_control.tscn
+main.tscn::PackedScene::49351432216942594::1734114519::0::1::::<><>::uid://dj68uh5ww5b08::::res://Scenes/teuto_forest.jpg<>uid://dtone6hpojcx1::::res://Scenes/player.tscn<>uid://dfn1yx70sdynd::::res://Scenes/bullet_catcher.tscn<>uid://mgomvu2yo3u5::::res://Scenes/invader_spawner.tscn<>uid://dn47qdhpsw0s2::::res://ufo_spawner.tscn<>uid://c8bxce3fgs58i::::res://Scenes/bunker.tscn<>res://Scenes/life_manager.gd<>res://Scenes/points_counter.gd<>uid://belx0qfvh4cii::::res://Scenes/ui.tscn<>uid://b1a5x1tdnmkvx::::res://midi_control.tscn
 midi_control.gd::GDScript::-1::1729011085::0::1::::MidiControl<>Control<>::
 midi_key.gd::GDScript::-1::1729011085::0::1::::MidiKey<>Node<>::
-midi_key.tscn::PackedScene::1797794683617398923::1734113532::0::1::::<><>::res://Scenes/midi_key.gd
+midi_key.tscn::PackedScene::1797794683617398923::1734114519::0::1::::<><>::res://Scenes/midi_key.gd
 player.gd::GDScript::-1::1734113026::0::1::::Player<>Area2D<>::
-player.tscn::PackedScene::8522549472578421240::1734113532::0::1::::<><>::res://Scenes/player.gd<>uid://dt0af4o7yh41a::::res://Assets/Player/Player.png<>res://Scenes/shooting.gd<>uid://bojqq0wbhl785::::res://Scenes/laser.tscn<>uid://bi2vdab3slwgf::::res://Assets/Player/Player-explosion1.png<>uid://b4mk25ro2nqtu::::res://Assets/Player/Player-explosion2.png<>uid://dsg2krqtkgnca::::res://Assets/Player/Player-explosion3.png<>uid://yon7d5k2aonu::::res://Assets/Audio/Player_Destroyed.wav
+player.tscn::PackedScene::8522549472578421240::1734114519::0::1::::<><>::res://Scenes/player.gd<>uid://dt0af4o7yh41a::::res://Assets/Player/Player.png<>res://Scenes/shooting.gd<>uid://bojqq0wbhl785::::res://Scenes/laser.tscn<>uid://bi2vdab3slwgf::::res://Assets/Player/Player-explosion1.png<>uid://b4mk25ro2nqtu::::res://Assets/Player/Player-explosion2.png<>uid://dsg2krqtkgnca::::res://Assets/Player/Player-explosion3.png<>uid://yon7d5k2aonu::::res://Assets/Audio/Player_Destroyed.wav
 points_counter.gd::GDScript::-1::1730218795::0::1::::PointsCounter<>Node<>::
 ReverseLeaderboard.gd::GDScript::-1::1729011085::0::1::::<>Node2D<>::
-ReverseLeaderboard.tscn::PackedScene::3969259614933302015::1734113533::0::1::::<><>::uid://d2eakbmaefnt6::::res://Addons/silent_wolf/assets/themes/sw_theme.tres<>uid://clllbf6am8qdf::::res://Addons/silent_wolf/common/SWButton.tscn<>res://Scenes/ReverseLeaderboard.gd
+ReverseLeaderboard.tscn::PackedScene::3969259614933302015::1734114520::0::1::::<><>::uid://d2eakbmaefnt6::::res://Addons/silent_wolf/assets/themes/sw_theme.tres<>uid://clllbf6am8qdf::::res://Addons/silent_wolf/common/SWButton.tscn<>res://Scenes/ReverseLeaderboard.gd
 shooting.gd::GDScript::-1::1729009896::0::1::::<>Node2D<>::
 teuto_forest.jpg::CompressedTexture2D::7856997145874582279::1733856522::1733856523::1::::<><>::
 ufo.gd::GDScript::-1::1733856428::0::1::::Ufo<>Area2D<>::
-ufo.tscn::PackedScene::8709777920648333716::1734113534::0::1::::<><>::uid://5s1qaxknbe1f::::res://Assets/Ufo/Ufo.png<>res://Scenes/ufo.gd<>res://Scenes/ufo_shooting.gd<>uid://lqnuy0gfw77f::::res://Scenes/invader_shot.tscn<>res://spawn_timer.gd
+ufo.tscn::PackedScene::8709777920648333716::1734114521::0::1::::<><>::uid://5s1qaxknbe1f::::res://Assets/Ufo/Ufo.png<>res://Scenes/ufo.gd<>res://Scenes/ufo_shooting.gd<>uid://lqnuy0gfw77f::::res://Scenes/invader_shot.tscn<>res://spawn_timer.gd
 ufo_shooting.gd::GDScript::-1::1730832292::0::1::::<>Node2D<>::
 ufo_spawner.gd::GDScript::-1::1733856428::0::1::::<>Node2D<>::
 ui.gd::GDScript::-1::1733856428::0::1::::<>CanvasLayer<>::
-ui.tscn::PackedScene::2691326198283404248::1734113532::0::1::::<><>::res://Scenes/ui.gd<>uid://ch103gi2tob72::::res://Assets/font/andina.ttf
+ui.tscn::PackedScene::2691326198283404248::1734114519::0::1::::<><>::res://Scenes/ui.gd<>uid://ch103gi2tob72::::res://Assets/font/andina.ttf
