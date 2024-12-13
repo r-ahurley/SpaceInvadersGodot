@@ -1,8 +1,8 @@
 [gd_scene load_steps=2 format=3 uid="uid://b7o8ytjjdecej"]
 
-[ext_resource type="AudioStream" uid="uid://lu2u2gmb8w6y" path="res://Assets/Audio/Space Invaders Main Menu.mp3" id="1_bfcni"]
+[ext_resource type="AudioStream" uid="uid://b8qacv7cfulrb" path="res://Assets/Audio/V2_Space Invaders Main Menu.mp3" id="1_5x5js"]
 
 [node name="Background Music" type="AudioStreamPlayer"]
-stream = ExtResource("1_bfcni")
+stream = ExtResource("1_5x5js")
 autoplay = true
 bus = &"Music"

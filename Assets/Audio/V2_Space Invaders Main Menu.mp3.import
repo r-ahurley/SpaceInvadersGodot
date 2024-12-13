@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://b8qacv7cfulrb"
+path="res://.godot/imported/V2_Space Invaders Main Menu.mp3-ecae26beddb4ed69d6b74a6f12a54eae.mp3str"
+
+[deps]
+
+source_file="res://Assets/Audio/V2_Space Invaders Main Menu.mp3"
+dest_files=["res://.godot/imported/V2_Space Invaders Main Menu.mp3-ecae26beddb4ed69d6b74a6f12a54eae.mp3str"]
+
+[params]
+
+loop=true
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
